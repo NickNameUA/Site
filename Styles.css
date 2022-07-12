@@ -1,3 +1,15 @@
-body {
+html {
   background-color: rgb(200, 200, 200);
+}
+.main {
+  margin: 1.7%;
+  margin-top: 7%;
+  background-color: rgb(255, 255, 255);
+}
+.buttons {
+  margin-left: 10%;
+}
+.mainphoto {
+  margin: 1.7%;
+  margin-top: 7%;
 }
