@@ -1,8 +1,7 @@
 html {
-  background-color: rgb(200, 200, 200);
+  background-image: url(Img/background.jpg);
 }
 .main {
-  margin: 1.7%;
   margin-top: 7%;
   background-color: rgb(255, 255, 255);
 }
@@ -10,6 +9,11 @@ html {
   margin-left: 10%;
 }
 .mainphoto {
-  margin: 1.7%;
   margin-top: 7%;
+}
+.clock {
+}
+body {
+  margin-left: 4%;
+  margin-right: 4%;
 }
