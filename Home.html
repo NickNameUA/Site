@@ -3,12 +3,6 @@
   <head>
     <title>Liceum 21</title>
     <link rel="stylesheet" href="Styles.css" />
-  </head>
-
-  <body>
-    <div class="mainphoto">
-      <img src="Img/school-1.png" alt="Фото Ліцея" width="100%" />
-    </div>
     <script type="text/javascript">
       function getDate() {
         var date = new Date();
@@ -29,14 +23,33 @@
       }
       setInterval(getDate, 0);
     </script>
-    <div id="timedisplay"></div>
+    <!--Код JS для годинника-->
+  </head>
+
+  <body>
+    <div class="mainphoto">
+      <img src="Img/school-1.png" alt="Фото Ліцея" width="100%" />
+    </div>
+    <div id="timedisplay" class="clock"></div>
+    <!--Годинник-->
     <div class="main">
-      <p>l l l l l ll l l l ll l l l l</p>
-      <p>l</p>
-      <p>l</p>
-      <p>l</p>
-      <p>l</p>
-      <p>l</p>
+      <!--Основний блок-->
+      <div class="eTitle">День захисту дітей</div>
+      <div>
+        <img src="img/photo.jpg" alt="Фото" class="eImg" />
+      </div>
+      <div class="eTitle">Останній дзвоник 2022</div>
+      <div>
+        <iframe
+          width="640"
+          height="360"
+          src="https://www.youtube.com/embed/HKAoMkKJqlA"
+          title="Ліцей 21 Вітання зі святом Останнього дзвоника 2022"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
   </body>
 </html>

@@ -2,18 +2,39 @@ html {
   background-image: url(Img/background.jpg);
 }
 .main {
-  margin-top: 7%;
   background-color: rgb(255, 255, 255);
+  float: right;
+  width: 70%;
+  margin-bottom: 10%;
+  padding: 3%;
 }
 .buttons {
   margin-left: 10%;
 }
-.mainphoto {
-  margin-top: 7%;
-}
 .clock {
+  background-color: white;
+  padding: 5%;
+  text-align: center;
+  width: 10%;
+  font-size: 130%;
+  float: left;
 }
 body {
   margin-left: 4%;
   margin-right: 4%;
+  margin-top: 10%;
+}
+.contain {
+}
+.eTitle {
+  margin-bottom: 12px;
+  padding-left: 37px;
+  font-size: 1.286em;
+  line-height: 1.333;
+  font-weight: bold;
+  color: #4b4b4b;
+  background: url(img/shout.png) no-repeat left 2px;
+}
+.eImg {
+  margin-bottom: 5%;
 }
