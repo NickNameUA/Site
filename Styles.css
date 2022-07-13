@@ -43,8 +43,25 @@ ol {
   padding: 5%;
   text-align: center;
   width: 10%;
-  font-size: 130%;
   float: left;
+}
+#list a {
+  color: rgb(100, 100, 100);
+  font-size: 90%;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+  height: 20px;
+}
+#list li {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#list a:hover {
+  color: black;
+  font-size: 100%;
+}
+#list a:active {
 }
 #list_names {
   margin: 0%;
