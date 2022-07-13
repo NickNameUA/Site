@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 html {
   background-image: url(Img/background.jpg);
 }
@@ -7,6 +8,8 @@ html {
   width: 70%;
   margin-bottom: 10%;
   padding: 3%;
+  border: 1px black;
+  border-style: solid;
 }
 .buttons {
   margin-left: 10%;
@@ -16,8 +19,11 @@ html {
   padding: 5%;
   text-align: center;
   width: 10%;
-  font-size: 130%;
+  font-size: 170%;
   float: left;
+  border: 1px black;
+  border-style: solid;
+  font-family: "Lobster", cursive;
 }
 body {
   margin-left: 4%;
@@ -40,10 +46,13 @@ hr {
 ol {
   list-style-type: none;
   background-color: white;
-  padding: 5%;
+  padding: 1%;
+  padding-top: 1%;
   text-align: center;
-  width: 10%;
+  width: 18%;
   float: left;
+  border: 1px black;
+  border-style: solid;
 }
 #list a {
   color: rgb(100, 100, 100);
@@ -78,4 +87,8 @@ ol {
 }
 .eImg {
   margin-bottom: 5%;
+}
+iframe {
+  height: 430px;
+  width: 100%;
 }
