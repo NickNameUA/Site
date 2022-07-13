@@ -34,7 +34,7 @@ body {
 }
 hr {
   margin: 20px 0;
-  padding: 0;
+  padding: 0%;
   height: 10px;
   border: none;
   box-sizing: border-box;
@@ -74,7 +74,7 @@ ol {
 }
 #list_names {
   margin: 0%;
-  margin-bottom: 25%;
+  margin-bottom: 10%;
 }
 .eTitle {
   margin-bottom: 12px;
