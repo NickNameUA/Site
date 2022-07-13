@@ -11,7 +11,7 @@ html {
 .buttons {
   margin-left: 10%;
 }
-.clock {
+#timedisplay {
   background-color: white;
   padding: 5%;
   text-align: center;
@@ -25,6 +25,30 @@ body {
   margin-top: 10%;
 }
 .contain {
+}
+hr {
+  margin: 20px 0;
+  padding: 0;
+  height: 10px;
+  border: none;
+  box-sizing: border-box;
+  background-position: 50%;
+  color: orange;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3px" height="3px" viewBox="0 0 3 3" fill="orange"><polygon points="0,0.5 0,1.5 1.5,3 2.5,3"></polygon><polygon points="2.5,0 1.5,0 3,1.5 3,0.5"></polygon></svg>');
+  background-size: 6px 6px;
+}
+ol {
+  list-style-type: none;
+  background-color: white;
+  padding: 5%;
+  text-align: center;
+  width: 10%;
+  font-size: 130%;
+  float: left;
+}
+#list_names {
+  margin: 0%;
+  margin-bottom: 25%;
 }
 .eTitle {
   margin-bottom: 12px;
