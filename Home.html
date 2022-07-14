@@ -21,39 +21,24 @@
     />
     <link rel="manifest" href="Img/Favicons/site.webmanifest" />
     <link rel="stylesheet" href="Styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script type="text/javascript">
-      function getDate() {
-        var date = new Date();
-        var hours = date.getHours();
-        var minutes = date.getMinutes();
-        var seconds = date.getSeconds();
-        if (seconds < 10) {
-          seconds = "0" + seconds;
-        }
-        if (hours < 10) {
-          hours = "0" + hours;
-        }
-        if (minutes < 10) {
-          minutes = "0" + minutes;
-        }
-        document.getElementById("timedisplay").innerHTML =
-          hours + ":" + minutes + ":" + seconds;
-      }
-      setInterval(getDate, 0);
+      /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
       function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
       }
 
-      // Close the dropdown menu if the user clicks outside of it
-      window.onclick = function (event) {
-        if (!event.target.matches(".dropbtn")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
-            }
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (e) {
+        if (!e.target.matches(".dropbtn")) {
+          var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains("show")) {
+            myDropdown.classList.remove("show");
           }
         }
       };
@@ -61,25 +46,26 @@
     <!--Код JS для годинника-->
   </head>
   <body>
-    <div id="navigation_menu">
-      <a href="#" id="home">Головна</a>
-        <div id="timedisplay"></div>
-        <!--Годинник-->
-        <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">Класи</button>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">6</a>
-            <a href="#">7</a>
-            <a href="#">8</a>
-            <a href="#">9</a>
-            <a href="#">10</a>
-            <a href="#">11</a>
-          </div>
+    <div class="navbar">
+      <a href="#home">Головна</a>
+      <a href="#news">Новини</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">
+          Наші соц мережі та контактні дані
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <h3>Соц мережі</h3>
+          <a href="https://www.facebook.com/cvlyceum21">Facebook</a>
+          <a href="https://www.youtube.com/channel/UCaY5H1l8aNDVKfW9oJ4sGoQ"
+            >Youtube</a
+          >
+          <h3>Контакти</h3>
+          <h4>Номер телефону</h4>
+          <p>(0372)560-703</p>
+          <p>(0372)560-468</p>
+          <h4>Електронна пошта</h4>
+          <p>cvlyceum21@gmial.com</p>
         </div>
       </div>
     </div>
