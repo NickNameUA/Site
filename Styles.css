@@ -91,7 +91,7 @@ iframe {
 .navbar a:hover,
 .dropdown:hover .dropbtn,
 .dropbtn:focus {
-  color: rgb(255, 255, 0);
+  color: rgb(255, 225, 0);
 }
 
 .dropdown-content {
@@ -123,6 +123,7 @@ iframe {
 }
 .dropdown-content a:hover {
   background-color: #ddd;
+  color: blue;
 }
 
 .show {
