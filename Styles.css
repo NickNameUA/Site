@@ -14,16 +14,15 @@ html {
 .buttons {
   margin-left: 10%;
 }
+
 #timedisplay {
-  background-color: white;
-  padding: 5%;
-  text-align: center;
-  width: 10%;
-  font-size: 170%;
-  float: left;
-  border: 1px black;
-  border-style: solid;
+  background: initial;
+  font-size: 30px;
   font-family: "Lobster", cursive;
+  position: relative;
+  top: 10px;
+  right: 10px;
+  float: right;
 }
 body {
   margin-left: 4%;
@@ -39,43 +38,19 @@ hr {
   border: none;
   box-sizing: border-box;
   background-position: 50%;
-  color: orange;
+  color: #ffea00;
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3px" height="3px" viewBox="0 0 3 3" fill="orange"><polygon points="0,0.5 0,1.5 1.5,3 2.5,3"></polygon><polygon points="2.5,0 1.5,0 3,1.5 3,0.5"></polygon></svg>');
   background-size: 6px 6px;
 }
-ol {
-  list-style-type: none;
-  background-color: white;
-  padding: 1%;
-  padding-top: 1%;
-  text-align: center;
-  width: 18%;
-  float: left;
-  border: 1px black;
-  border-style: solid;
+#navigation_menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 10%;
+  background-color: #ffea00;
 }
-#list a {
-  color: rgb(100, 100, 100);
-  font-size: 90%;
-  text-align: center;
-  text-decoration: none;
-  width: 100px;
-  height: 20px;
-}
-#list li {
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-#list a:hover {
-  color: black;
-  font-size: 100%;
-}
-#list a:active {
-}
-#list_names {
-  margin: 0%;
-  margin-bottom: 10%;
-}
+
 .eTitle {
   margin-bottom: 12px;
   padding-left: 37px;
@@ -91,4 +66,65 @@ ol {
 iframe {
   height: 430px;
   width: 100%;
+}
+/* Dropdown Button */
+#home {
+  font-family: "Lobster", cursive;
+  background: initial;
+  color: black;
+  margin-left: 30px;
+  font-size: 30px;
+}
+.dropbtn {
+  font-family: "Lobster", cursive;
+  background: initial;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #ffda00;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  left: 10px;
+  top: 7px;
+  background-color: #f1f1f1;
+  min-width: 73px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
 }

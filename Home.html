@@ -40,17 +40,53 @@
           hours + ":" + minutes + ":" + seconds;
       }
       setInterval(getDate, 0);
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
     </script>
     <!--Код JS для годинника-->
   </head>
-
   <body>
+    <div id="navigation_menu">
+      <a href="#" id="home">Головна</a>
+        <div id="timedisplay"></div>
+        <!--Годинник-->
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Класи</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#">11</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="mainphoto">
       <!-- Фото-->
       <img src="Img/school-1.png" alt="Фото Ліцея" width="100%" />
     </div>
-    <div id="timedisplay"></div>
-    <!--Годинник-->
     <div class="main">
       <hr />
       <div class="eTitle">День захисту дітей</div>
@@ -70,22 +106,5 @@
       </div>
     </div>
     <!--Основний блок-->
-    <div id="list">
-      <ol>
-        <h3 id="list_names">Класи</h3>
-        <li><a href="https://www.youtube.com/">1</a></li>
-        <li><a>2</a></li>
-        <li><a>3</a></li>
-        <li><a>4</a></li>
-        <li><a>5</a></li>
-        <li><a>6</a></li>
-        <li><a>7</a></li>
-        <li><a>8</a></li>
-        <li><a>9</a></li>
-        <li><a>10</a></li>
-        <li><a>11</a></li>
-      </ol>
-    </div>
-    <!--Список з ліва-->
   </body>
 </html>
