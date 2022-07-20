@@ -1,15 +1,24 @@
-/* When the user clicks on the button, 
+"use strict";
+
+/* When the user click on the button, 
 toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+function myFunction(a) {
+  document.getElementById(a).classList.toggle("show");
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function (e) {
-  if (!e.target.matches(".dropbtn")) {
-    var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains("show")) {
-      myDropdown.classList.remove("show");
+
+window.onclick = function (element) {
+  if (!element.target.matches(".dropbtn")) {
+    const element = document.getElementById("myDropdown");
+    const element1 = document.getElementById("myDropdown1");
+    if (element.classList.contains("show")) {
+      element.classList.remove("show");
+      element.classList.remove("dropbtn");
+    }
+    if (element1.classList.contains("show")) {
+      element1.classList.remove("show");
+      element1.classList.remove("dropbtn");
     }
   }
 };

@@ -48,16 +48,23 @@ iframe {
   height: 430px;
   width: 100%;
 }
+#account {
+  border-radius: 50%;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
 
 .navbar {
+  position: fixed;
+  display: flex;
   overflow: hidden;
   background-color: #333;
   font-family: Arial, Helvetica, sans-serif;
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  top: 0%;
+  left: 4%;
+  right: 4%;
 }
 
 .navbar a {
@@ -71,9 +78,17 @@ iframe {
 .navbar a:first-child {
   margin-left: 3%;
 }
+
 .dropdown {
-  float: right;
+  display: inline;
   overflow: hidden;
+  margin: 0%;
+  padding: 0%;
+  border: none;
+}
+.dropdown:nth-child(3) {
+  margin-left: auto;
+  margin-right: 5%;
 }
 
 .dropdown .dropbtn {
@@ -86,11 +101,11 @@ iframe {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  height: auto;
 }
 
 .navbar a:hover,
-.dropdown:hover .dropbtn,
-.dropbtn:focus {
+.dropdown:hover .dropbtn {
   color: rgb(255, 225, 0);
 }
 
@@ -128,4 +143,5 @@ iframe {
 
 .show {
   display: block;
+  float: right;
 }
