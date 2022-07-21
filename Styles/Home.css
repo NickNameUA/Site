@@ -9,6 +9,7 @@
   padding: 3%;
   border: 1px black;
   border-style: solid;
+  height: 10000px;
 }
 hr {
   margin: 20px 0;
@@ -30,10 +31,11 @@ hr {
   line-height: 1.333;
   font-weight: bold;
   color: #4b4b4b;
-  background: url(img/shout.png) no-repeat left 2px;
+  background: url(/Img/shout.png) no-repeat left 2px;
 }
 .eImg {
   margin-bottom: 5%;
+  height: 100%;
 }
 iframe {
   height: 430px;
