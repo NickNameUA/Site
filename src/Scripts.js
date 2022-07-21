@@ -22,3 +22,17 @@ window.onclick = function (element) {
     }
   }
 };
+function bScrollTop() {
+  document.documentElement.scrollTop = 0;
+}
+
+window.addEventListener("scroll", function () {
+  let scrollPos = window.scrollY;
+  if (scrollPos > 1500) {
+    document.querySelector(".scrollingButtonTop").classList.add("visibleBut");
+  } else {
+    document
+      .querySelector(".scrollingButtonTop")
+      .classList.remove("visibleBut");
+  }
+});
