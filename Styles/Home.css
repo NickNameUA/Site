@@ -41,3 +41,8 @@ iframe {
   height: 430px;
   width: 100%;
 }
+@media screen and (max-width: 480px) {
+  .eImg {
+    width: 100%;
+  }
+}
