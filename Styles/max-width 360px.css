@@ -1,0 +1,8 @@
+@media screen and (max-width: 360px) {
+  .navbar a:first-child {
+    margin-left: 19%;
+  }
+  .dropdown a:first-child {
+    margin: 0%;
+  }
+}
