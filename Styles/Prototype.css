@@ -61,7 +61,9 @@ body {
 .dropdown:hover .dropbtn {
   color: rgb(255, 225, 0);
 }
-
+.viseOff {
+  visibility: hidden;
+}
 .dropdown-content {
   display: none;
   position: fixed;
@@ -96,6 +98,21 @@ body {
   display: block;
   float: right;
 }
+#menuBtn {
+  margin: 0%;
+  padding: 0%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  visibility: hidden;
+}
+#myDropdown2 {
+  visibility: hidden;
+  background: #333;
+}
+#myDropdown2 a {
+  color: white;
+}
 .scrollingButtonTop {
   position: fixed;
   right: 5%;
@@ -106,23 +123,45 @@ body {
   visibility: hidden;
   background: none;
 }
-.visibleBut {
-  visibility: visible;
-}
 @media screen and (max-width: 480px) {
+  #account {
+    right: 0%;
+    position: fixed;
+  }
   .dropdown {
     visibility: hidden;
+  }
+  #myDropdown2 {
+    visibility: visible;
+    top: 10%;
   }
   .navbar {
     height: 10%;
     left: 0%;
     right: 0%;
   }
-  .navbar a {
-    position: fixed;
-    right: 20%;
-  }
   .navbar a:first-child {
-    right: 50%;
+    margin-left: 25%;
+  }
+  .dropdown a:first-child {
+    position: relative;
+    margin: 0%;
+  }
+  #menuBtn {
+    visibility: visible;
+    top: 5px;
+  }
+  .show:nth-child(2) {
+    position: fixed;
+    top: 110px;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .navbar a:first-child {
+    margin-left: 19%;
+  }
+  .dropdown a:first-child {
+    margin: 0%;
   }
 }

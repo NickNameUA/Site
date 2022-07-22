@@ -12,6 +12,7 @@ window.onclick = function (element) {
   if (!element.target.matches(".dropbtn")) {
     const element = document.getElementById("myDropdown");
     const element1 = document.getElementById("myDropdown1");
+    const element2 = document.getElementById("myDropdown2");
     if (element.classList.contains("show")) {
       element.classList.remove("show");
       element.classList.remove("dropbtn");
@@ -19,6 +20,10 @@ window.onclick = function (element) {
     if (element1.classList.contains("show")) {
       element1.classList.remove("show");
       element1.classList.remove("dropbtn");
+    }
+    if (element2.classList.contains("show")) {
+      element2.classList.remove("show");
+      element2.classList.remove("dropbtn");
     }
   }
 };
