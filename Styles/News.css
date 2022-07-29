@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+#main {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 10000px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  margin-bottom: 10%;
+  padding: 3%;
+  border: 1px black solid;
+}
