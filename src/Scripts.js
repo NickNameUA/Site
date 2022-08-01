@@ -1,7 +1,10 @@
 "use strict";
 
+const width = window.screen.width;
+
 /* When the user click on the button, 
 toggle between hiding and showing the dropdown content */
+
 function myFunction(a) {
   document.getElementById(a).classList.toggle("show");
 }
@@ -30,14 +33,13 @@ window.onclick = function (element) {
 function bScrollTop() {
   document.documentElement.scrollTop = 0;
 }
-
 window.addEventListener("scroll", function () {
   let scrollPos = window.scrollY;
-  if (scrollPos > 1500) {
-    document.querySelector(".scrollingButtonTop").classList.add("visibleBut");
+  let width1 = width * 1.5;
+  const id1 = document.getElementById("scrlBtnTop").style;
+  if (scrollPos > width1) {
+    id1.visibility = "visible";
   } else {
-    document
-      .querySelector(".scrollingButtonTop")
-      .classList.remove("visibleBut");
+    id1.visibility = "hidden";
   }
 });
