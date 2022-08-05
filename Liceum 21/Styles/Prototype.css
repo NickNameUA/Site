@@ -150,6 +150,9 @@ body {
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
 }
-.viseOff {
+.navbaraactive {
   visibility: hidden;
+}
+.viseOff {
+  visibility: visible;
 }
