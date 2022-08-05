@@ -11,28 +11,28 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="Img/Favicons/apple-touch-icon.png"
+      href="/Img/Favicons/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="Img/Favicons/favicon-32x32.png"
+      href="/Img/Favicons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="Img/Favicons/favicon-16x16.png"
+      href="/Img/Favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="Img/Favicons/site.webmanifest" />
-    <link rel="stylesheet" href="Styles/News.css" />
-    <link rel="stylesheet" href="Styles/Prototype.css" />
-    <link rel="stylesheet" href="Styles/max-width 360px.css" />
-    <link rel="stylesheet" href="Styles/max-width 480px.css" />
-    <link rel="stylesheet" href="Styles/min-width 1000px.css" />
-    <link rel="stylesheet" href="Styles/min-width 1400px.css" />
-    <link rel="stylesheet" href="Styles/min-width 200px.css" />
+    <link rel="manifest" href="/Img/Favicons/site.webmanifest" />
+    <link rel="stylesheet" href="/Styles/News.css" />
+    <link rel="stylesheet" href="/Styles/Prototype.css" />
+    <link rel="stylesheet" href="/Styles/max-width 360px.css" />
+    <link rel="stylesheet" href="/Styles/max-width 480px.css" />
+    <link rel="stylesheet" href="/Styles/min-width 1000px.css" />
+    <link rel="stylesheet" href="/Styles/min-width 1400px.css" />
+    <link rel="stylesheet" href="/Styles/min-width 200px.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -56,7 +56,7 @@
       </div>
       <button id="scrlBtnTop" onclick="bScrollTop()">
         <img
-          src="Img/Button/BtnScrTop.png"
+          src="/Img/Button/BtnScrTop.png"
           width="60px"
           height="60px"
           alt="Scroll Top"
