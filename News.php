@@ -45,6 +45,7 @@
     <script src="Src/NavBar.js"></script>
   </head>
   <body>
+    <div class="pagebody">
     <div id="main">
       <div class="btnSwpP">
         <button class="swapBtn" id="btnSwpPM" onclick="Swap(-1)">
@@ -63,6 +64,7 @@
         />
       </button>
     </div>
+</div>
     <?php include "Details/Footer.php";?>
   </body>
 </html>
