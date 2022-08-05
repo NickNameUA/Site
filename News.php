@@ -38,12 +38,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <?php include "NavBar.php"; ?>
-    <script src="Src/NavBar.js" scr="Src/Scroll.js">
-      window.addEventListener("load", active("news"))
+    <?php 
+    include "NavBar.php";
+    ?>
+    <script src="Src/NavBar.js" scr="Src/Scroll.js" scr="Scr/Scroll.js">
     </script>
   </head>
-  <body onload="active('news')">
+  <body>
     <div id="main">
       <div class="btnSwpP">
         <button class="swapBtn" id="btnSwpPM" onclick="Swap(-1)">
@@ -62,5 +63,6 @@
         />
       </button>
     </div>
+    <?php include "Footer.php";?>
   </body>
 </html>

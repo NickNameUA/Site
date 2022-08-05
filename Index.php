@@ -38,10 +38,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <?php include "NavBar.php"; ?>
-    <script src="Src/NavBar.js" scr="Src/Scroll.js"></script>
+    <?php 
+    include "NavBar.php";
+    ?>
+    <script scr="Src/Scroll.js"></script>
+    <script src="Src/NavBar.js"></script>
   </head>
-  <body onload="active('index')">
+  <body>
+    <div class="pagebody">
     <div>
       <!--Photo-->
       <img
@@ -90,6 +94,8 @@
         />
       </button>
     </div>
+</div>
     <!--Button scroll top-->
+    <?php include "Footer.php";?>
   </body>
 </html>

@@ -1,15 +1,15 @@
 "use strict";
 
-const width = window.screen.width;
+const height = window.screen.height;
 
 function bScrollTop() {
   document.documentElement.scrollTop = 0;
 }
 window.addEventListener("scroll", function () {
   let scrollPos = window.scrollY;
-  let width1 = width * 1.5;
+  let height1 = height * 1.5;
   const id1 = document.getElementById("scrlBtnTop").style;
-  if (scrollPos > width1) {
+  if (scrollPos > height1) {
     id1.visibility = "visible";
   } else {
     id1.visibility = "hidden";
