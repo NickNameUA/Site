@@ -26,7 +26,7 @@
       href="Img/Favicons/favicon-16x16.png"
     />
     <link rel="manifest" href="Img/Favicons/site.webmanifest" />
-    <link rel="stylesheet" href="Styles/Home.css" />
+    <link rel="stylesheet" href="Styles/News.css" />
     <link rel="stylesheet" href="Styles/Prototype.css" />
     <link rel="stylesheet" href="Styles/max-width 360px.css" />
     <link rel="stylesheet" href="Styles/max-width 480px.css" />
@@ -39,41 +39,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <?php 
-    include "NavBar.php";
+    include "Details/NavBar.php";
     ?>
-    <script scr="Src/Scroll.js"></script>
-    <script src="Src/NavBar.js"></script>
+    <script src="Src/NavBar.js" scr="Src/Scroll.js" scr="Scr/Scroll.js">
+    </script>
   </head>
   <body>
-    <div class="pagebody">
-    <div>
-      <!--Photo-->
-      <img
-        id="MainPhoto"
-        src="Img/school-1.png"
-        alt="Фото Ліцея"
-        width="100%"
-      />
-    </div>
     <div id="main">
-      <div class="post">
-        <hr />
-        <div class="eTitle">День захисту дітей</div>
-        <div>
-          <img src="img/photo.jpg" alt="Фото" class="eImg" />
-        </div>
-      </div>
-      <div class="post">
-        <hr />
-        <div class="eTitle">Останній дзвоник 2022</div>
-        <iframe
-          src="https://www.youtube.com/embed/HKAoMkKJqlA"
-          title="Ліцей 21 Вітання зі святом Останнього дзвоника 2022"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
       <div class="btnSwpP">
         <button class="swapBtn" id="btnSwpPM" onclick="Swap(-1)">
           Попередня сторінка
@@ -82,9 +54,6 @@
           Наступна сторінка
         </button>
       </div>
-    </div>
-    <!--Main block-->
-    <div>
       <button id="scrlBtnTop" onclick="bScrollTop()">
         <img
           src="Img/Button/BtnScrTop.png"
@@ -94,8 +63,6 @@
         />
       </button>
     </div>
-</div>
-    <!--Button scroll top-->
-    <?php include "Footer.php";?>
+    <?php include "Details/Footer.php";?>
   </body>
 </html>
