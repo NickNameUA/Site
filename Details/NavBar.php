@@ -1,12 +1,10 @@
 <div class="navbar">
       <a id="index" href="Index.php">Головна</a>
       <a id="news" href="News.php">Новини</a>
-      <div class="dropdown">
+      <div class="dropdown" id="menuBtn">
         <button
           class="dropbtn"
-          id="menuBtn"
-          onclick="myFunction('myDropdown2')"
-        >
+          onclick="myFunction('myDropdown2')">
           <img
             alt="Menu"
             src="/Img/Button/BtnMenu.png"
@@ -58,7 +56,7 @@
           <p>cvlyceum21@gmial.com</p>
         </div>
       </div>
-      <form action="#profile">
+      <form action="#profile" id="profile">
         <button id="account">
           <img
             src="/Img/Button/AccountImg.png"
