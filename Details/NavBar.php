@@ -56,14 +56,12 @@
           <p>cvlyceum21@gmial.com</p>
         </div>
       </div>
-      <form action="#profile" id="profile">
-        <button id="account">
+        <a id="account" href="Profile.php">
           <img
             src="/Img/Button/AccountImg.png"
             height="47"
             width="47"
             alt="Profile"
           />
-        </button>
-      </form>
+        </a>
     </div>

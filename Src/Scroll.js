@@ -19,10 +19,3 @@ window.addEventListener("scroll", function () {
     id1.visibility = "hidden";
   }
 });
-
-//Visibility and hidden scroll button
-const $linkFullWidth = $("div.image--link");
-
-if ($(window).width() < 768) {
-  // Delete the element $linkFullWidth
-}

@@ -1,0 +1,17 @@
+#LogIn {
+  background-color: #333;
+  border: solid yellow 5px;
+  box-sizing: border-box;
+  width: 92%;
+  height: 70%;
+  position: fixed;
+  top: 15%;
+  left: 4%;
+}
+
+#footer {
+  position: fixed;
+  width: auto;
+  right: 4%;
+  left: 4%;
+}

@@ -1,11 +1,11 @@
-#profile {
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: 0%;
-}
 #account {
+  margin-left: auto;
+  margin-right: 2%;
   border: none;
+  padding: 0%;
   background: none;
+  cursor: pointer;
+  border-radius: 50%;
 }
 .navbar {
   text-align: center;

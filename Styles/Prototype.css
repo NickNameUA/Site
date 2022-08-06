@@ -74,10 +74,9 @@ footer {
   padding: 3px;
   background-color: #333;
   color: white;
-  position: relative;
   bottom: 0%;
   left: 0%;
-  width: 99%;
+  width: -webkit-fill-available;
 }
 footer a {
   color: #ddd;
