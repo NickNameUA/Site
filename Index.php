@@ -11,6 +11,7 @@
     <?php
     include "Details/Links.php";
     include "Details/NavBar.php";
+    include "Details/Db.php";
     ?>
    
    <script src="Src/NavBar.js"></script>

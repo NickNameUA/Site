@@ -56,7 +56,7 @@
           <p>cvlyceum21@gmial.com</p>
         </div>
       </div>
-        <a id="account" href="Profile.php">
+        <a id="account" href="LogIn.php">
           <img
             src="/Img/Button/AccountImg.png"
             height="47"
