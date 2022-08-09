@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap");
 
 #LogIn {
-  background-color: #333;
-  border: solid rgb(250, 255, 0) 3px;
+  background-color: var(--second-bg-color);
+  border: solid var(--main-color) 3px;
   box-sizing: border-box;
-  margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
+  margin-left: auto;
+  margin-right: auto;
   transform: translate(-50%, -50%);
   padding: 5%;
   font-family: "Oswald", sans-serif;
@@ -30,9 +30,9 @@ input {
   padding: 1%;
 }
 .button {
-  background: rgb(250, 255, 0);
+  background: var(--main-color);
   border: none;
-  color: #333;
+  color: var(--text-color);
   font-size: 100%;
   cursor: pointer;
   margin: auto;
@@ -41,7 +41,7 @@ input {
   font-family: "Oswald", sans-serif;
 }
 .button:hover {
-  background-color: rgb(250, 255, 0, 0.8);
+  background: var(--text-color-hover);
 }
 
 #footer {
@@ -52,5 +52,10 @@ input {
   bottom: 0%;
 }
 p {
-  color: white;
+  color: var(--text-color-inverse);
+}
+@media screen and (max-width: 410px) {
+  .names {
+    display: block;
+  }
 }

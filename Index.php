@@ -17,17 +17,17 @@
    <script src="Src/NavBar.js"></script>
    <script src="Src/Scroll.js"></script>
   </head>
-  <body>
+  <body onload="check()">
+    <div>
+      <!--Photo-->
+      <img
+        id="MainPhoto"
+        src="Img/school-1.png"
+        alt="Фото Ліцея"
+        width="100%"
+      />
+    </div>
     <div class="pagebody">
-      <div>
-        <!--Photo-->
-        <img
-          id="MainPhoto"
-          src="Img/school-1.png"
-          alt="Фото Ліцея"
-          width="100%"
-        />
-      </div>
       <div id="main">
         <div class="post">
           <hr />
@@ -60,7 +60,8 @@
       <div>
         <button id="scrlBtnTop" onclick="bScrollTop()">
           <img
-            src="Img/Button/BtnScrTop.png"
+            id="scrlBtnImg"
+            src="Img/Button/BtnScrlTopDark.png"
             width="60px"
             height="60px"
             alt="Scroll Top"

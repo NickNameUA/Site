@@ -6,17 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Реєстрація</title>
 
-	<link rel="stylesheet" href="Styles/LogIn.css" media="screen" type="text/css" />
   <link rel="stylesheet" href="Styles/Profile.css" />
   <?php
     include "Details/Links.php";
     include "Details/NavBar.php";
   ?>
-   
   <script src="Src/NavBar.js"></script>
   <script src="Src/Scroll.js"></script>
 </head>
-  <body>
+  <body onload="check()">
     <div id="LogIn">
       <form action="save_user.php" method="post">
         <div class="names">

@@ -6,6 +6,13 @@
   #profile {
     margin: 0%;
   }
+  .ColorSet {
+    display: none;
+  }
+  #myDropdown2 .ColorSet {
+    display: block;
+    margin: auto;
+  }
   .dropdown {
     display: none;
   }

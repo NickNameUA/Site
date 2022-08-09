@@ -1,18 +1,26 @@
 #account {
-  margin-left: auto;
   margin-right: 2%;
+  margin-left: 2%;
   border: none;
   padding: 0%;
   background: none;
   cursor: pointer;
   border-radius: 50%;
 }
+#index {
+  margin-left: 2%;
+}
+.ColorSet {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 .navbar {
   text-align: center;
   position: fixed;
   display: flex;
   overflow: hidden;
-  background-color: #333;
+  background-color: var(--second-bg-color);
   font-family: Arial, Helvetica, sans-serif;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   top: 0%;
@@ -20,15 +28,15 @@
   right: 4%;
   z-index: 10;
 }
+.navbar p {
+  color: var(--text-color);
+}
 .navbar a {
   font-size: 16px;
-  color: white;
+  color: var(--main-bg-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-.navbar a:first-child {
-  margin-left: 2%;
 }
 .dropdown {
   display: inline;
@@ -54,7 +62,7 @@
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  color: var(--main-bg-color);
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -64,25 +72,27 @@
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  color: rgb(255, 225, 0);
+  color: var(--main-color);
+  background-color: var(--main-bg-color-hover);
 }
 .dropdown-content {
   display: none;
   position: fixed;
-  background-color: white;
+  background-color: var(--second-bg-color);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 .dropdown-content a {
   float: none;
-  color: black;
+  color: var(--text-color);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 .dropdown-content h3 {
   margin-left: 5%;
+  color: var(--text-color);
 }
 .dropdown-content h3:nth-child(4) {
   margin-bottom: 0%;
@@ -90,10 +100,11 @@
 .dropdown-content h4 {
   margin-top: 5%;
   margin-left: 5%;
+  color: var(--text-color);
 }
 .dropdown-content a:hover {
-  background-color: #ddd;
-  color: blue;
+  background-color: var(--main-bg-color-hover);
+  color: var(--main-color);
 }
 .show {
   display: block;
@@ -107,8 +118,9 @@
 }
 #myDropdown2 {
   visibility: hidden;
-  background: #333;
+  background: var(--second-bg-color);
 }
 #myDropdown2 a {
-  color: white;
+  color: var(--main-bg-color);
+  background: var(--second-bg-color);
 }

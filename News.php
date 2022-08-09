@@ -17,27 +17,28 @@
     <script src="Src/NavBar.js"></script>
     <script src="Src/Scroll.js"></script>
   </head>
-  <body>
-    <div class="pagebody">
-    <div id="main">
-      <div class="btnSwpP">
-        <button class="swapBtn" id="btnSwpPM" onclick="Swap(-1)">
-          Попередня сторінка
-        </button>
-        <button class="swapBtn" id="btnSwpPP" onclick="Swap(1)">
-          Наступна сторінка
+  <body onload="check()">
+    <div id="pagebodyNews">
+      <div id="main">
+        <div class="btnSwpP">
+          <button class="swapBtn" id="btnSwpPM" onclick="Swap(-1)">
+            Попередня сторінка
+          </button>
+          <button class="swapBtn" id="btnSwpPP" onclick="Swap(1)">
+            Наступна сторінка
+          </button>
+        </div>
+        <button id="scrlBtnTop" onclick="bScrollTop()">
+          <img
+            id="scrlBtnImg"
+            src="Img/Button/BtnScrlTopDark.png"
+            width="60px"
+            height="60px"
+            alt="Scroll Top"
+          />
         </button>
       </div>
-      <button id="scrlBtnTop" onclick="bScrollTop()">
-        <img
-          src="Img/Button/BtnScrTop.png"
-          width="60px"
-          height="60px"
-          alt="Scroll Top"
-        />
-      </button>
     </div>
-</div>
     <?php include "Details/Footer.php";?>
   </body>
 </html>
