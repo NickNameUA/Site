@@ -17,7 +17,7 @@
       <button class="ColorSet" id="colorSetBut" onclick="changeColorSet()">
         <img
         id="colorSet"
-        src="/Img/Button/ChangeDark.png"
+        src="/Img/Button/Dark/ChangeDark.png"
         height="47"
         width="47"
         alt="Profile"/>
@@ -66,15 +66,16 @@
   </div>
   <button class="ColorSet" id="colorSetBut" onclick="changeColorSet()">
     <img
-    id="colorSet"
-    src="/Img/Button/ChangeDark.png"
+    id="colorImg"
+    src="/Img/Button/Dark/ChangeDark.png"
     height="47"
     width="47"
     alt="Profile"/>
   </button>
   <a id="account" href="LogIn.php">
     <img
-    src="/Img/Button/AccountImg.png"
+    id="accountImg"
+    src="/Img/Button/Dark/AccountImgDark.png"
     height="47"
     width="47"
     alt="Profile"

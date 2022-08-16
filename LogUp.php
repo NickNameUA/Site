@@ -16,34 +16,28 @@
 </head>
   <body onload="check()">
     <div id="LogIn">
-      <form action="save_user.php" method="post">
+      <form action="\Details\check_reg.php" method="post">
         <div class="names">
           <p>
             <label>Ваше ім'я:<br></label>
-            <input name="FirstName" type="text" size="10" maxlength="20">  
-          <div>
+            <input name="firstName" type="text" size="10" maxlength="20">  
             <p>
             <label>Ваша фамілія:<br></label>
-            <input name="LastName" type="text" size="10" maxlength="20">
-        
-          </div>
+            <input name="lastName" type="text" size="10" maxlength="20">
         </div>
-        <div class="names">
+        <div id="email">
           <p>
             <label>Пароль:<br></label>
-            <input name="Password" type="password" size="20" maxlength="20">
-          <p>
-            <label>Повторіть пароль:<br></label>
-            <input name="Password" type="password" size="20" maxlength="20">
+            <input name="password" type="password" size="20" maxlength="20">
         </div>
         <div id="email">
           <p>
             <label>Ваш Email:<br></label>
-            <input name="Email" type="text" size="20" maxlength="25">
+            <input name="email" type="text" size="20" maxlength="25">
           <p>
             <div class="names">
-                <input class="button" type="submit" name="submit" value="Зареєструватися">
-                <a class="button" href="LogIn.php">Увійти</a>
+                <input class="button" type="submit" name="login" value="Зареєструватися">
+                <input class="button" type="submit" name="login" value="Увійти">
             </div>
         </div>      
       </form>

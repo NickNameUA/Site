@@ -24,6 +24,8 @@ window.onclick = function (element) {
   }
 };
 
+//Close the dropdown if the user clicks on button again of it
+
 function removedrop(elementd) {
   elementd.classList.remove("show");
   elementd.classList.remove("dropbtn");
@@ -32,8 +34,9 @@ function removedrop(elementd) {
 // Close the dropdown if the user clicks outside of it
 
 function change(color) {
-  let colorSet = document.getElementById("colorSet");
+  let colorSet = document.getElementById("colorImg");
   let scrlBtnImg = document.getElementById("scrlBtnImg");
+  let account = document.getElementById("accountImg");
   let style = document.documentElement.style;
   try {
     switch (color) {
@@ -45,8 +48,9 @@ function change(color) {
         style.setProperty("--text-color", "rgb(51, 51, 51)");
         style.setProperty("--text-color-inverse", "rgb(51, 51, 51)");
         style.setProperty("--text-color-hover", "rgb(130, 130, 130");
-        colorSet.src = "/Img/Button/ChangeLight.png";
-        scrlBtnImg.src = "/Img/Button/BtnScrlTopLight.png";
+        colorSet.src = "/Img/Button/Light/ChangeLight.png";
+        scrlBtnImg.src = "/Img/Button/Light/BtnScrlTopLight.png";
+        account.src = "/Img/Button/Light/AccountImgLight.png";
         break;
       case "Dark":
         style.setProperty("--main-bg-color", "rgb(255, 255, 255)");
@@ -59,8 +63,9 @@ function change(color) {
         style.setProperty("--text-color", "rgb(51, 51, 51,)");
         style.setProperty("--text-color-inverse", "rgb(255, 255, 255)");
         style.setProperty("--text-color-hover", "rgb(200, 200, 0");
-        colorSet.src = "/Img/Button/ChangeDark.png";
-        scrlBtnImg.src = "/Img/Button/BtnScrlTopDark.png";
+        colorSet.src = "/Img/Button/Dark/ChangeDark.png";
+        scrlBtnImg.src = "/Img/Button/Dark/BtnScrlTopDark.png";
+        account.src = "/Img/Button/Dark/AccountImgDark.png";
         break;
     }
   } catch (error) {}

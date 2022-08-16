@@ -17,7 +17,7 @@
 </head>
   <body onload="check()">
     <div id="LogIn">
-      <form action="save_user.php" method="post">
+      <form action="\Details\check_log.php" method="post">
           <p>
             <label>Ваш Email:<br></label>
             <input name="Email" type="text" size="20" maxlength="25">
@@ -26,8 +26,8 @@
             <input name="Password" type="password" size="20" maxlength="20">
           <p>
             <div class="names">
-              <input class="button" type="submit" name="submit" value="Увійти">
-              <a class="button" href="LogUp.php">Зареєструватися</a>
+              <input class="button" type="submit" name="login" value="Увійти">
+            <input class="button" type="submit" name="login" value="Зареєструватися">
             </div>
           </form>
     </div>
