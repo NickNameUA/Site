@@ -1,3 +1,16 @@
+<?php 
+session_start();
+if (!$_SESSION["Error"] == NULL){
+echo '
+  <div id="error">
+    <p>
+    '.$_SESSION["Error"].'
+    </p>
+  </div>
+';
+}
+$_SESSION['Error'] = NULL;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,10 +33,10 @@
         <div class="names">
           <p>
             <label>Ваше ім'я:<br></label>
-            <input name="firstName" type="text" size="10" maxlength="20">  
+            <input name="firstName" type="text" size="10" maxlength="20" value = "<?php echo($_SESSION['firstname']);?>">  
             <p>
             <label>Ваша фамілія:<br></label>
-            <input name="lastName" type="text" size="10" maxlength="20">
+            <input name="lastName" type="text" size="10" maxlength="20" value="<?php echo($_SESSION['lastname']);?>">
         </div>
         <div id="email">
           <p>
@@ -33,7 +46,7 @@
         <div id="email">
           <p>
             <label>Ваш Email:<br></label>
-            <input name="email" type="text" size="20" maxlength="25">
+            <input name="email" type="text" size="20" maxlength="319" value="<?php echo($_SESSION['email']);?>">
           <p>
             <div class="names">
                 <input class="button" type="submit" name="login" value="Зареєструватися">

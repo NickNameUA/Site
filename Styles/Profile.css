@@ -45,7 +45,14 @@ input {
 .button:hover {
   background: var(--text-color-hover);
 }
-
+#error {
+  position: fixed;
+  background-color: black;
+  text-align: center;
+  color: red;
+  top: 10%;
+  width: 100vw;
+}
 #footer {
   position: fixed;
   width: auto;

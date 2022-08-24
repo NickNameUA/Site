@@ -72,7 +72,7 @@
     width="47"
     alt="Profile"/>
   </button>
-  <a id="account" href="LogIn.php">
+  <a id="account" href="<?php if ($_SESSION['Login'] == NULL){echo('LogIn.php');}else{echo('Profile.php');}?>">
     <img
     id="accountImg"
     src="/Img/Button/Dark/AccountImgDark.png"

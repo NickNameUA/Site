@@ -1,3 +1,4 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -11,7 +12,6 @@
     <?php
     include "Details/Links.php";
     include "Details/NavBar.php";
-    include "Details/Db.php";
     ?>
    
    <script src="Src/NavBar.js"></script>
@@ -27,7 +27,7 @@
         width="100%"
       />
     </div>
-    <div class="pagebody">
+    <div class="pagebodyMain">
       <div id="main">
         <div class="post">
           <hr />
