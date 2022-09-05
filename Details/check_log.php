@@ -39,6 +39,9 @@ if ($but == "Зареєструватися") {
     header('Location: /LogIn.php');
     exit;
   } else {
+    $statusCheck = mysqli_query($connect, "SELECT `Status` FROM `logdata` WHERE `Email` LIKE '$email'");
+    $statusCheck = mysqli_fetch_all($statusCheck);
+    $statusCheck = $statusCheck[0][0];
 		$_SESSION['Login'] = $email;
     header('Location: /Index.php');
     exit;

@@ -14,6 +14,10 @@ if ($but == "Увійти") {
 		$_SESSION['email'] = $email;
     $pass = $_POST['password'];
 		$_SESSION['password'] = $password;
+    $phone = $_POST['phone'];
+    $_SESSION['phone'] = $phone;
+    $male = $_POST['male'];
+    $_SESSION['male'] = $male;
     if (trim($firstname, " ") == ''){
         $_SESSION['Error'] = 'Ви не ввели імені';
         header('Location: /LogUp.php');
@@ -21,6 +25,11 @@ if ($but == "Увійти") {
     };
     if (trim($lastname, " ") == ''){
         $_SESSION['Error'] = 'Ви не ввели фамілію';
+        header('Location: /LogUp.php');
+        exit;
+    };
+    if ($male == NULL){
+      $_SESSION['Error'] = 'Ви не вибрали стать';
         header('Location: /LogUp.php');
         exit;
     };
@@ -34,6 +43,16 @@ if ($but == "Увійти") {
 			header('Location: /LogUp.php');
       exit;
 		} 
+    if (trim($phone, " ") == ''){
+      $_SESSION['Error'] = 'Ви не ввели номер телефону';
+      header('Location: /LogUp.php');
+      exit;
+    };
+    if (strlen($phone) != 10){
+      $_SESSION['Error'] = 'Ви ввели не правильний номер телефону';
+      header('Location: /LogUp.php');
+      exit;
+    };
     if (trim($pass, " ") == ''){
       $_SESSION['Error'] = 'Ви не ввели пароль';
       header('Location: /LogUp.php');
@@ -56,7 +75,14 @@ if ($but == "Увійти") {
     //double email check
     $pass = password_hash($pass, PASSWORD_BCRYPT);
     //hash password 
-		mysqli_query($connect, "INSERT INTO `logdata` (`FirstName`, `LastName`, `Email`, `Password`) VALUES ('$firstname', '$lastname', '$email', '$pass')");
+		mysqli_query($connect, "INSERT INTO `logdata` (`FirstName`, `LastName`, `Email`, `Phone`, `Password`, `Male`) VALUES ('$firstname', '$lastname', '$email', '$phone', '$pass', '$male')");
+    $_SESSION['Login'] = $email;
+    unset ($_SESSION['firstname']);
+    unset ($_SESSION['lastname']);
+    unset ($_SESSION['phone']);
+		unset ($_SESSION['password']);
+    unset ($_SESSION['phone']);
+    unset ($_SESSION['male']);
     header('Location: /Index.php');
 		exit;	
 }

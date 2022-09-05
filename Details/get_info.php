@@ -1,8 +1,6 @@
 <?php 
 include "Db.php";
-$a = mysqli_query($connect, "SELECT `FirstName`, `LastName`, `Email`, `Status` FROM `logdata` WHERE `Email` LIKE $_SESSION['Login']");
+$ssesion_name = $_SESSION['Login'];
+$a = mysqli_query($connect, "SELECT `FirstName`, `LastName`, `Email`, `Phone`, `Status`, `Male` FROM `logdata` WHERE `Email` LIKE '$ssesion_name'");
 $a = mysqli_fetch_all($a);
-$passCheck = mysqli_query($connect, "SELECT `Email`, `Password` FROM `logdata` WHERE `Email` LIKE '$email'");
-$passCheck = mysqli_fetch_all($passCheck);
-
 ?>

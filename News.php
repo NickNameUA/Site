@@ -1,21 +1,18 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"
-    />
-
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
     <title>Liceum 21</title>
-    <link rel="stylesheet" href="Styles/News.css" />
+    <link rel="stylesheet" href="Styles/Pages/News.css" />
     <?php 
     include "Details/Links.php";
     include "Details/NavBar.php";
     ?>
-
     <script src="Src/NavBar.js"></script>
     <script src="Src/Scroll.js"></script>
+    <script src="Src/Theame.js"></script>
   </head>
   <body onload="check()">
     <div id="pagebodyNews">

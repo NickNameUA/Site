@@ -19,13 +19,14 @@ $_SESSION['Error'] = NULL;
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Реєстрація</title>
 
-  <link rel="stylesheet" href="Styles/Profile.css" />
+  <link rel="stylesheet" href="Styles/Pages/Log.css" />
   <?php
     include "Details/Links.php";
     include "Details/NavBar.php";
   ?>
   <script src="Src/NavBar.js"></script>
   <script src="Src/Scroll.js"></script>
+  <script src="Src/Theame.js"></script>
 </head>
   <body onload="check()">
     <div id="LogIn">
@@ -34,20 +35,29 @@ $_SESSION['Error'] = NULL;
           <p>
             <label>Ваше ім'я:<br></label>
             <input name="firstName" type="text" size="10" maxlength="20" value = "<?php echo($_SESSION['firstname']);?>">  
-            <p>
+          <p>
             <label>Ваша фамілія:<br></label>
             <input name="lastName" type="text" size="10" maxlength="20" value="<?php echo($_SESSION['lastname']);?>">
         </div>
-        <div id="email">
+        <div class="email">
+          <p>
+            <label>Вкажіть вашу стать:<br></label>
+          <p>
+            <input type="radio" name="male" id="radio1" <?php if(($_SESSION['male']) == 1){echo('checked');};?> value="1"><label>Чоловік</label>
+            <input type="radio" name="male" id="radio2" <?php if(($_SESSION['male']) == 0){echo('checked');};?> value="0"><label>Жінка</label>
+        </div>  
+        <div class="email">
           <p>
             <label>Пароль:<br></label>
             <input name="password" type="password" size="20" maxlength="20">
         </div>
-        <div id="email">
+        <div class="email">
           <p>
             <label>Ваш Email:<br></label>
             <input name="email" type="text" size="20" maxlength="319" value="<?php echo($_SESSION['email']);?>">
           <p>
+            <label>Ваш номер телефону<br></label>
+            <input name="phone" type="number" value="<?php echo($_SESSION['phone']);?>">
             <div class="names">
                 <input class="button" type="submit" name="login" value="Зареєструватися">
                 <input class="button" type="submit" name="login" value="Увійти">

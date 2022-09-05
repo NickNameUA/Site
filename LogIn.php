@@ -18,13 +18,14 @@ $_SESSION['Error'] = NULL;
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Вхід</title>
-  <link rel="stylesheet" href="Styles/Profile.css" />
+  <link rel="stylesheet" href="Styles/Pages/Log.css" />
   <?php
     include "Details/Links.php";
     include "Details/NavBar.php";
   ?>
   <script src="Src/NavBar.js"></script>
   <script src="Src/Scroll.js"></script>
+  <script src="Src/Theame.js"></script>
 </head>
   <body onload="check()">
     <div id="LogIn">

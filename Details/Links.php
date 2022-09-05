@@ -16,13 +16,13 @@
       href="Img/Favicons/favicon-16x16.png"
     />
     <link rel="manifest" href="Img/Favicons/site.webmanifest" />
-    <link rel="stylesheet" href="Styles/Prototype.css" />
-    <link rel="stylesheet" href="Styles/NavBar.css" />
-    <link rel="stylesheet" href="Styles/max-width 360px.css" />
-    <link rel="stylesheet" href="Styles/max-width 697px.css" />
-    <link rel="stylesheet" href="Styles/min-width 1000px.css" />
-    <link rel="stylesheet" href="Styles/min-width 1400px.css" />
-    <link rel="stylesheet" href="Styles/min-width 2000px.css" />
+    <link rel="stylesheet" href="Styles/Pages/Prototype.css" />
+    <link rel="stylesheet" href="Styles/Pages/NavBar.css" />
+    <link rel="stylesheet" href="Styles/Adaptation/max-width 360px.css" />
+    <link rel="stylesheet" href="Styles/Adaptation/max-width 697px.css" />
+    <link rel="stylesheet" href="Styles/Adaptation/min-width 1000px.css" />
+    <link rel="stylesheet" href="Styles/Adaptation/min-width 1400px.css" />
+    <link rel="stylesheet" href="Styles/Adaptation/min-width 2000px.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
