@@ -22,7 +22,6 @@ $_SESSION['Error'] = NULL;
   <?php
     include "Details/Links.php";
     include "Details/NavBar.php";
-    include "Details/get_info.php";
   ?>
    
   <script src="Src/NavBar.js"></script>
@@ -34,37 +33,37 @@ $_SESSION['Error'] = NULL;
 <?php 
   if($a[0][5] == 1){
     switch($a[0][4]){
-      case 0:
+      case 5:
         echo "<p id='Admin'>Ви адміністратор</p>";
       break;
-      case 1: 
+      case 4: 
         echo "<p id='Admin'>Ви директор</p>";
       break;
-      case 2: 
+      case 3: 
       echo "<p id='Admin'>Ви вчитель</p>";
       break;
-      case 3: 
+      case 2: 
       echo "<p id='Admin'>Ви учень</p>";
       break;
-      case 4: 
+      case 1: 
       echo "<p id='Admin'>Ви батько</p>";
       break;
     }
   }else{
     switch($a[0][4]){
-      case 0:
+      case 5:
         echo "<p id='Admin'>Ви адміністраторша</p>";
       break;
-      case 1: 
+      case 4: 
         echo "<p id='Admin'>Ви директриса</p>";
       break;
-      case 2: 
+      case 3: 
         echo "<p id='Admin'>Ви вчителька</p>";
       break;
-      case 3: 
+      case 2: 
         echo "<p id='Admin'>Ви учениця</p>";
       break;
-      case 4: 
+      case 1: 
         echo "<p id='Admin'>Ви мати</p>";
       break;
     }

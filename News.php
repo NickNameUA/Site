@@ -15,7 +15,7 @@
     <script src="Src/Theame.js"></script>
   </head>
   <body onload="check()">
-    <div id="pagebodyNews">
+    <div id="pagebody">
       <div id="main">
         <div class="btnSwpP">
           <button class="swapBtn" id="btnSwpPM" onclick="Swap(-1)">
@@ -28,7 +28,7 @@
         <button id="scrlBtnTop" onclick="bScrollTop()">
           <img
             id="scrlBtnImg"
-            src="Img/Button/BtnScrlTopDark.png"
+            src="Img/Button/Dark/BtnScrlTopDark.png"
             width="60px"
             height="60px"
             alt="Scroll Top"

@@ -48,7 +48,7 @@
 .dropdown:nth-child(4) {
   margin-left: auto;
 }
-.dropdown:nth-child(5) {
+.dropdown:nth-last-child(3) {
   margin-right: auto;
 }
 .dropdown:nth-child(3) {
