@@ -12,6 +12,7 @@ hr {
   background-size: 6px 6px;
   border-radius: 5%;
 }
+
 .eTitle {
   margin-bottom: 12px;
   padding-left: 37px;
@@ -26,6 +27,7 @@ iframe {
   height: 70vh;
   width: 100%;
 }
+
 .post {
   height: 600px;
 }

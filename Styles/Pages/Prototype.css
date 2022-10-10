@@ -9,30 +9,38 @@
   --text-color-hover: rgb(200, 200, 0);
   --btnScrlTop: url(/Img/Button/BtnScrlTopDark.png);
 }
+
 .pagebody {
   margin: 0% 4% 0% 4%;
 }
+
 body::-webkit-scrollbar {
   width: 10px;
 }
+
 body::-webkit-scrollbar-track {
   background: var(--main-bg-color);
 }
+
 body::-webkit-scrollbar-thumb {
   background-color: var(--second-bg-color);
   border-radius: 50px;
   border: 3px solid var(--main-bg-color);
 }
+
 /*Scroll*/
+
 html {
   background-image: var(--background-photo);
   margin: 0%;
   padding: 0%;
 }
+
 body {
   margin: 0%;
   padding: 0%;
 }
+
 #main {
   background-color: var(--main-bg-color);
   width: 100%;
@@ -46,6 +54,7 @@ body {
   display: inline-block;
   text-align: center;
 }
+
 #scrlBtnTop {
   position: fixed;
   right: 0%;
@@ -57,6 +66,7 @@ body {
   z-index: 2;
   visibility: hidden;
 }
+
 .btnSwpP {
   background-color: var(--second-bg-color);
   width: 100%;
@@ -68,6 +78,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .swapBtn {
   border: solid var(--second-bg-color) 2px;
   box-sizing: border-box;
@@ -75,21 +86,26 @@ body {
   height: 30px;
   padding: 0px 10px 0px 10px;
 }
+
 .swapBtn:hover {
   background-color: var(--text-color-hover);
   cursor: pointer;
 }
+
 #btnSwpPP {
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
 }
+
 #btnSwpPM {
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
 }
+
 .viseOff {
   visibility: hidden;
 }
+
 footer {
   text-align: center;
   padding: 3px;
@@ -100,13 +116,16 @@ footer {
   width: -webkit-fill-available;
   position: relative;
 }
+
 footer a {
   color: var(--text-color-inverse);
   text-decoration: none;
 }
+
 #pagebody {
   margin: 10% 4% 0% 4%;
 }
+
 #error {
   position: fixed;
   background-color: black;

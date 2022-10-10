@@ -7,14 +7,17 @@
   cursor: pointer;
   border-radius: 50%;
 }
+
 #index {
   margin-left: 2%;
 }
+
 .ColorSet {
   background: none;
   border: none;
   cursor: pointer;
 }
+
 .navbar {
   text-align: center;
   position: fixed;
@@ -28,9 +31,11 @@
   right: 4%;
   z-index: 10;
 }
+
 .navbar p {
   color: var(--text-color);
 }
+
 .navbar a {
   font-size: 16px;
   color: var(--main-bg-color);
@@ -38,6 +43,7 @@
   padding: 14px 16px;
   text-decoration: none;
 }
+
 .dropdown {
   display: inline;
   overflow: hidden;
@@ -45,12 +51,15 @@
   padding: 0%;
   border: none;
 }
+
 .dropdown:nth-child(4) {
   margin-left: auto;
 }
+
 .dropdown:nth-last-child(3) {
   margin-right: auto;
 }
+
 .dropdown:nth-child(3) {
   margin-left: auto;
   margin-right: 5%;
@@ -75,6 +84,7 @@
   color: var(--main-color);
   background-color: var(--main-bg-color-hover);
 }
+
 .dropdown-content {
   display: none;
   position: fixed;
@@ -83,6 +93,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
+
 .dropdown-content a {
   float: none;
   color: var(--text-color);
@@ -90,36 +101,44 @@
   text-decoration: none;
   display: block;
 }
+
 .dropdown-content h3 {
   margin-left: 5%;
   color: var(--text-color);
 }
+
 .dropdown-content h3:nth-child(4) {
   margin-bottom: 0%;
 }
+
 .dropdown-content h4 {
   margin-top: 5%;
   margin-left: 5%;
   color: var(--text-color);
 }
+
 .dropdown-content a:hover {
   background-color: var(--main-bg-color-hover);
   color: var(--main-color);
 }
+
 .show {
   display: block;
   float: right;
 }
+
 #menuBtn {
   position: fixed;
   top: 0%;
   left: 0%;
   visibility: visible;
 }
+
 #myDropdown2 {
   visibility: hidden;
   background: var(--second-bg-color);
 }
+
 #myDropdown2 a {
   color: var(--main-bg-color);
   background: var(--second-bg-color);

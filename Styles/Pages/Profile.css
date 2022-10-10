@@ -13,14 +13,17 @@
   padding: 50px;
   font-family: "Oswald", sans-serif;
 }
+
 .names {
   display: flex;
   box-sizing: content-box;
   text-align: center;
 }
+
 .Contain {
   margin-right: 10%;
 }
+
 input {
   margin: auto 0% auto auto;
   border-radius: 10px;
@@ -30,6 +33,7 @@ input {
   color: var(--text-color);
   background-color: var(--main-color);
 }
+
 .button {
   background: var(--main-color);
   color: var(--text-color);
@@ -41,9 +45,11 @@ input {
   margin-top: 6px;
   margin-bottom: 16px;
 }
+
 .button:hover {
   background: var(--text-color-hover);
 }
+
 #error {
   position: fixed;
   background-color: black;
@@ -53,6 +59,7 @@ input {
   width: 100vw;
   z-index: 100;
 }
+
 #footer {
   position: fixed;
   width: auto;
@@ -60,22 +67,27 @@ input {
   left: 4%;
   bottom: 0%;
 }
+
 p {
   color: var(--text-color-inverse);
   padding: 0px 10px;
   margin: 16px 0px;
 }
+
 #Admin {
   text-align: center;
   margin: 0%;
 }
+
 @media screen and (max-width: 410px) {
   .names {
     display: block;
   }
+
   #LogIn {
     padding: 5%;
   }
+
   .Contain {
     margin: auto;
   }
