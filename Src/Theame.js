@@ -27,7 +27,7 @@ function change(color) {
           "--background-photo",
           "url(/Img/backgroundLight.jpg)"
         );
-        style.setProperty("--text-color", "rgb(51, 51, 51,)");
+        style.setProperty("--text-color", "rgb(0, 0, 0)");
         style.setProperty("--text-color-inverse", "rgb(255, 255, 255)");
         style.setProperty("--text-color-hover", "rgb(200, 200, 0");
         colorSet.src = "/Img/Button/Dark/ChangeDark.png";

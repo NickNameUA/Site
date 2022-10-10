@@ -1,4 +1,6 @@
-<?php session_start()?>
+<?php session_start();
+$_SESSION['StatusCreate'] = NULL;
+?>
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -24,64 +26,112 @@
     <div id="pagebody">
       <div id="main">
 				<tr>
-					<h1>Адміністратори</h1>
-          <button class="ListBtn" onclick="listNumber(5)">Редагувати</button>
+          <h1>Адміністратори</h1>
+          <form action='Details/AccountListDo.php' method='post'>
+          <input class='ListBtn' type='submit' name='Do' value='Створити'>
+          <input class='id' name='status' type='text' size='0' maxlength='2' value='5'>
+          </form>
           <div class='Info'>
             <?php foreach($Admins as $key){
-              echo($key[0]); echo(' ');
-              echo($key[1]); echo(' ');
-              echo($key[2]); echo(' ');
-              echo($key[3]); echo(' ');?></br>
+              ?><form action='Details/AccountListDo.php' method='post'><?php
+              echo"<input class='ListInp' type='submit' name='Do' value='Зберегти'>";
+              echo"<input class='ListInp' type='submit' name='Do' value='Видалити'>";
+              echo"<input class='id' name='id' type='text' size='0' maxlength='10000' value='$key[4]'>"; 
+              echo"<input class='ListInp' name='firstName' type='text' size='10' maxlength='20' value='$key[0]'>";
+              echo"<input class='ListInp' name='lastName' type='text' size='10' maxlength='20' value='$key[1]'>";
+              echo"<input class='ListInp' name='email' type='text' size='10' maxlength='319' value='$key[2]'>";
+              echo"<input class='ListInp' name='phone' type='text' size='10' maxlength='20' value='$key[3]'></br>";
+              ?></form>
             <?php };?>
           </div>
 					<h1>Деректори</h1>
-          <button class="ListBtn" onclick="listNumber(4)">Редагувати</button>
+          <form action='Details/AccountListDo.php' method='post'>
+          <input class='ListBtn' type='submit' name='Do' value='Створити'>
+          <input class='id' name='status' type='text' size='0' maxlength='2' value='4'>
+          </form>
           <div class='Info'>
             <?php foreach($Directors as $key){
-              echo($key[0]); echo(' ');
-              echo($key[1]); echo(' ');
-              echo($key[2]); echo(' ');
-              echo($key[3]); echo(' ');?></br>
+              ?><form action='Details/AccountListDo.php' method='post'><?php
+              echo"<input class='ListInp' type='submit' name='Do' value='Зберегти'>";
+              echo"<input class='ListInp' type='submit' name='Do' value='Видалити'>";
+              echo"<input class='id' name='id' type='text' size='0' maxlength='10000' value='$key[4]'>"; 
+              echo"<input class='ListInp' name='firstName' type='text' size='10' maxlength='20' value='$key[0]'>";
+              echo"<input class='ListInp' name='lastName' type='text' size='10' maxlength='20' value='$key[1]'>";
+              echo"<input class='ListInp' name='email' type='text' size='10' maxlength='319' value='$key[2]'>";
+              echo"<input class='ListInp' name='phone' type='text' size='10' maxlength='20' value='$key[3]'></br>";
+              ?></form>
             <?php };?>
           </div>
 					<h1>Вчителі</h1>
-          <button class="ListBtn" onclick="listNumber(3)">Редагувати</button>
+          <form action='Details/AccountListDo.php' method='post'>
+          <input class='ListBtn' type='submit' name='Do' value='Створити'>
+          <input class='id' name='status' type='text' size='0' maxlength='2' value='3'>
+          </form>
           <div class='Info'>
             <?php foreach($Teachers as $key){
-              echo($key[0]); echo(' ');
-              echo($key[1]); echo(' ');
-              echo($key[2]); echo(' ');
-              echo($key[3]); echo(' ');?></br>
+              ?><form action='Details/AccountListDo.php' method='post'><?php
+              echo"<input class='ListInp' type='submit' name='Do' value='Зберегти'>";
+              echo"<input class='ListInp' type='submit' name='Do' value='Видалити'>";
+              echo"<input class='id' name='id' type='text' size='0' maxlength='10000' value='$key[4]'>"; 
+              echo"<input class='ListInp' name='firstName' type='text' size='10' maxlength='20' value='$key[0]'>";
+              echo"<input class='ListInp' name='lastName' type='text' size='10' maxlength='20' value='$key[1]'>";
+              echo"<input class='ListInp' name='email' type='text' size='10' maxlength='319' value='$key[2]'>";
+              echo"<input class='ListInp' name='phone' type='text' size='10' maxlength='20' value='$key[3]'></br>";
+              ?></form>
             <?php };?>
           </div>
           <h1>Батьки</h1>
-          <button class="ListBtn" onclick="listNumber(2)">Редагувати</button>
+          <form action='Details/AccountListDo.php' method='post'>
+          <input class='ListBtn' type='submit' name='Do' value='Створити'>
+          <input class='id' name='status' type='text' size='0' maxlength='2' value='2'>
+          </form>
           <div class='Info'>
             <?php foreach($Perents as $key){
-              echo($key[0]); echo(' ');
-              echo($key[1]); echo(' ');
-              echo($key[2]); echo(' ');
-              echo($key[3]); echo(' ');?></br>
+              ?><form action='Details/AccountListDo.php' method='post'><?php
+              echo"<input class='ListInp' type='submit' name='Do' value='Зберегти'>";
+              echo"<input class='ListInp' type='submit' name='Do' value='Видалити'>";
+              echo"<input class='id' name='id' type='text' size='0' maxlength='10000' value='$key[4]'>"; 
+              echo"<input class='ListInp' name='firstName' type='text' size='10' maxlength='20' value='$key[0]'>";
+              echo"<input class='ListInp' name='lastName' type='text' size='10' maxlength='20' value='$key[1]'>";
+              echo"<input class='ListInp' name='email' type='text' size='10' maxlength='319' value='$key[2]'>";
+              echo"<input class='ListInp' name='phone' type='text' size='10' maxlength='20' value='$key[3]'></br>";
+              ?></form>
             <?php };?>
           </div>
           <h1>Учні</h1>
-          <button class="ListBtn" onclick="listNumber(1)">Редагувати</button>
+          <form action='Details/AccountListDo.php' method='post'>
+          <input class='ListBtn' type='submit' name='Do' value='Створити'>
+          <input class='id' name='status' type='text' size='0' maxlength='2' value='1'>
+          </form>
           <div class='Info'>
             <?php foreach($Students as $key){
-              echo($key[0]); echo(' ');
-              echo($key[1]); echo(' ');
-              echo($key[2]); echo(' ');
-              echo($key[3]); echo(' ');?></br>
+              ?><form action='Details/AccountListDo.php' method='post'><?php
+              echo"<input class='ListInp' type='submit' name='Do' value='Зберегти'>";
+              echo"<input class='ListInp' type='submit' name='Do' value='Видалити'>";
+              echo"<input class='id' name='id' type='text' size='0' maxlength='10000' value='$key[4]'>"; 
+              echo"<input class='ListInp' name='firstName' type='text' size='10' maxlength='20' value='$key[0]'>";
+              echo"<input class='ListInp' name='lastName' type='text' size='10' maxlength='20' value='$key[1]'>";
+              echo"<input class='ListInp' name='email' type='text' size='10' maxlength='319' value='$key[2]'>";
+              echo"<input class='ListInp' name='phone' type='text' size='10' maxlength='20' value='$key[3]'></br>";
+              ?></form>
             <?php };?>
           </div>
           <h1>Без категорій</h1>
-          <button class="ListBtn" onclick="listNumber(0)">Редагувати</button>
+          <form action='Details/AccountListDo.php' method='post'>
+          <input class='ListBtn' type='submit' name='Do' value='Створити'>
+          <input class='id' name='status' type='text' size='0' maxlength='2' value='0'>
+          </form>
           <div class='Info'>
             <?php foreach($Unclassed as $key){
-              echo($key[0]); echo(' ');
-              echo($key[1]); echo(' ');
-              echo($key[2]); echo(' ');
-              echo($key[3]); echo(' ');?></br>
+              ?><form action='Details/AccountListDo.php' method='post'><?php
+              echo"<input class='ListInp' type='submit' name='Do' value='Зберегти'>";
+              echo"<input class='ListInp' type='submit' name='Do' value='Видалити'>";
+              echo"<input class='id' name='id' type='text' size='0' maxlength='10000' value='$key[4]'>"; 
+              echo"<input class='ListInp' name='firstName' type='text' size='10' maxlength='20' value='$key[0]'>";
+              echo"<input class='ListInp' name='lastName' type='text' size='10' maxlength='20' value='$key[1]'>";
+              echo"<input class='ListInp' name='email' type='text' size='10' maxlength='319' value='$key[2]'>";
+              echo"<input class='ListInp' name='phone' type='text' size='10' maxlength='20' value='$key[3]'></br>";
+              ?></form>
             <?php };?>
           </div>
       	</tr>

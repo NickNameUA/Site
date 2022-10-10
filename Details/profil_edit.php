@@ -56,5 +56,4 @@ switch($but){
     header('Location: /Profile.php');
 		exit;	
     break;
-
 }

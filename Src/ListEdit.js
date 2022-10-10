@@ -20,5 +20,5 @@ function listNumber(number) {
       document.cookie = "List=0";
       break;
   }
-  window.location.href = "AccountListEdit.php";
+  window.location.href = "AccountList.php";
 }

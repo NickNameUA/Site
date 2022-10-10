@@ -51,7 +51,7 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content" id="4">
-        <a href="AccountList.php">список аккаунтів</a>
+        <a href="AccountList.php">Cписок аккаунтів</a>
         </div>
       </div>';
     break;

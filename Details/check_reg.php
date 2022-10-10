@@ -18,6 +18,11 @@ if ($but == "Увійти") {
     $_SESSION['phone'] = $phone;
     $male = $_POST['male'];
     $_SESSION['male'] = $male;
+    if (!$_SESSION["StatusCreate"] == NULL){
+      $status = $_SESSION["StatusCreate"];
+    }else{
+      $status = 0;
+    };
     if (trim($firstname, " ") == ''){
         $_SESSION['Error'] = 'Ви не ввели імені';
         header('Location: /LogUp.php');
@@ -75,14 +80,19 @@ if ($but == "Увійти") {
     //double email check
     $pass = password_hash($pass, PASSWORD_BCRYPT);
     //hash password 
-		mysqli_query($connect, "INSERT INTO `logdata` (`FirstName`, `LastName`, `Email`, `Phone`, `Password`, `Male`) VALUES ('$firstname', '$lastname', '$email', '$phone', '$pass', '$male')");
-    $_SESSION['Login'] = $email;
+		mysqli_query($connect, "INSERT INTO `logdata` (`FirstName`, `LastName`, `Email`, `Phone`, `Password`, `Male`, `Status`) VALUES ('$firstname', '$lastname', '$email', '$phone', '$pass', '$male', '$status')");
     unset ($_SESSION['firstname']);
     unset ($_SESSION['lastname']);
     unset ($_SESSION['phone']);
-		unset ($_SESSION['password']);
-    unset ($_SESSION['phone']);
+    unset ($_SESSION['password']);
+    unset ($_SESSION['email']);
     unset ($_SESSION['male']);
-    header('Location: /Index.php');
-		exit;	
+    if (!$_SESSION["StatusCreate"] == NULL){
+      header('Location: /LogUp.php');
+      exit;	
+    }else{
+      $_SESSION['Login'] = $email;
+      header('Location: /Index.php');
+      exit;	
+    };
 }

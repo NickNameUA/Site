@@ -10,6 +10,15 @@ echo '
 ';
 }
 $_SESSION['Error'] = NULL;
+if (!$_SESSION["StatusCreate"] == NULL){
+  echo '
+    <div id="error">
+      <p>
+      '.$_SESSION["StatusCreate"].'
+      </p>
+    </div>
+  ';
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
