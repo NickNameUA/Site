@@ -2,6 +2,7 @@
 <div class="navbar">
   <a id="index" href="Index.php">Головна</a>
   <a id="news" href="News.php">Новини</a>
+  <!--Main button-->
   <div class="dropdown" id="menuBtn">
     <button
       class="dropbtn"
@@ -35,15 +36,14 @@
       <i class="fa fa-caret-down"></i>
     </button>
       <div class="dropdown-content" id="2">
-        <a href="#for_students">Для учнів</a>
-        <a href="#for_parents">Для батьків</a>
-        <a href="#for_teachers">Для вчителів</a>
-        <a href="#main_info">Основна інформація</a>
-       <a href="#more_info">Додаткові відомості</a>
+      <?php if($a[0][4] > 0){echo '<a href="#for_students">Для учнів</a>';}?>
+      <?php if($a[0][4] > 1){echo '<a href="#for_parents">Для батьків</a>';}?>
+      <?php if($a[0][4] > 2){echo '<a href="#for_teachers">Для вчителів</a>';}?>
+      <a href="#main_info">Основна інформація</a>
+      <a href="#more_info">Додаткові відомості</a>
       </div>
   </div>
-  <?php switch ($a[0][4]){
-    case 5:
+  <?php if($a[0][4] == 5){
       echo '
       <div class="dropdown">
         <button class="dropbtn" onclick="myFunction(4)">
@@ -53,33 +53,7 @@
         <div class="dropdown-content" id="4">
         <a href="AccountList.php">Cписок аккаунтів</a>
         </div>
-      </div>';
-    break;
-    case 4:
-      echo '
-      <div class="dropdown">
-        <button class="dropbtn" onclick="myFunction(4)">
-          Для директорів
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content" id="4">
-        <a href="AccountList.php">список аккаунтів</a>
-        </div>
-      </div>';
-    break;
-    case 3:
-      echo '
-      <div class="dropdown">
-        <button class="dropbtn" onclick="myFunction(4)">
-          Для вчителів
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content" id="4">
-          <a href="AccountList.php">список аккаунтів</a>
-        </div>
-      </div>';
-    break;
-  }?>
+      </div>';}?>
   <div class="dropdown">
     <button class="dropbtn" onclick="myFunction(1)">
       Контактні дані
@@ -103,7 +77,6 @@
       <a href="mailto:cvlyceum21@gmial.com">cvlyceum21@gmial.com</a>
     </div>
   </div>
-
   <button class="ColorSet" id="colorSetBut" onclick="changeColorSet()">
     <img
     id="colorImg"
@@ -121,5 +94,6 @@
     alt="Profile"
     />
   </a>
+  <!--ColorSet button-->
 </div>
 <?php?>
