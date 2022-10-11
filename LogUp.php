@@ -63,7 +63,7 @@ if (!$_SESSION["StatusCreate"] == NULL){
         <div class="email">
           <p>
             <label>Ваш Email:<br></label>
-            <input name="email" type="text" size="20" maxlength="319" value="<?php echo($_SESSION['email']);?>">
+            <input name="email" type="email" size="20" maxlength="319" value="<?php echo($_SESSION['email']);?>">
           <p>
             <label>Ваш номер телефону<br></label>
             <input name="phone" type="number" value="<?php echo($_SESSION['phone']);?>">

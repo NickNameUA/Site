@@ -11,6 +11,7 @@ echo '
 }
 $_SESSION['Error'] = NULL;
 ?>
+<!--Error message-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,18 +31,18 @@ $_SESSION['Error'] = NULL;
   <body onload="check()">
     <div id="LogIn">
       <form action="\Details\check_log.php" method="post">
-          <p>
-            <label>Ваш Email:<br></label>
-            <input name="email" type="text" size="20" maxlength="319" value="<?php echo($_SESSION['email']);?>">
-          <p>
-            <label>Пароль:<br></label>
-            <input name="password" type="password" size="20" maxlength="20">
-          <p>
-            <div class="names">
-              <input class="button" type="submit" name="login" value="Увійти">
+        <p>
+          <label>Ваш Email:<br></label>
+          <input name="email" type="text" size="20" maxlength="319" value="<?php echo($_SESSION['email']);?>">
+        <p>
+          <label>Пароль:<br></label>
+          <input name="password" type="password" size="20" maxlength="20">
+        <p>
+        <div class="names">
+            <input class="button" type="submit" name="login" value="Увійти">
             <input class="button" type="submit" name="login" value="Зареєструватися">
-            </div>
-          </form>
+        </div>
+      </form>
     </div>
     <?php include "Details/Footer.php";?>
   </body>

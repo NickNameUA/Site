@@ -35,7 +35,7 @@
       <i class="fa fa-caret-down"></i>
     </button>
       <div class="dropdown-content" id="2">
-        <a href="#for_students">Для учнів</a>
+        <a href="ForStudents.php">Для учнів</a>
         <a href="#for_parents">Для батьків</a>
         <a href="#for_teachers">Для вчителів</a>
         <a href="#main_info">Основна інформація</a>
