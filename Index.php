@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"
     />
-    <title>Liceum 21</title>
+    <title>Ліцей №21</title>
     <link rel="stylesheet" href="Styles/Pages/Home.css" />
     <?php
     include "Details/Links.php";

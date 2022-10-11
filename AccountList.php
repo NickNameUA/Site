@@ -9,7 +9,7 @@ $_SESSION['StatusCreate'] = NULL;
       name="viewport"
       content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"
     />
-    <title>Account List</title>
+    <title>Список Аккаунтів</title>
     <link rel="stylesheet" href="Styles/Pages/AccountList.css" />
     <?php
     include "Details/Links.php";
