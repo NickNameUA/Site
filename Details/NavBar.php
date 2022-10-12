@@ -36,7 +36,7 @@
       <i class="fa fa-caret-down"></i>
     </button>
       <div class="dropdown-content" id="2">
-      <?php if($a[0][4] > 0){echo '<a href="#for_students">Для учнів</a>';}?>
+      <?php if($a[0][4] > 0){echo '<a href="ForStudents.php">Для учнів</a>';}?>
       <?php if($a[0][4] > 1){echo '<a href="#for_parents">Для батьків</a>';}?>
       <?php if($a[0][4] > 2){echo '<a href="#for_teachers">Для вчителів</a>';}?>
       <a href="#main_info">Основна інформація</a>

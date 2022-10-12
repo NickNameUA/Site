@@ -1,25 +1,25 @@
 body {
-    font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 thead {
-    font-weight: bolder;
-    font-size: 90%;
-    font-style: italic;
+  font-weight: bolder;
+  font-size: 90%;
+  font-style: italic;
 }
 
 .bold {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .title {
-    margin-top: 5%
+  margin-top: 5%;
 }
 
 .bells,
 .lassons {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--second-bg-color);
 }
-

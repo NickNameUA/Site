@@ -25,6 +25,7 @@
         <h2 class="title">Розклад уроків</h2>
         <h3>Розклад уроків 10-Б клас</h3>
         <!-- Table -->
+        <?php include "Details/Db_schedule.php";?>
         <div>
           <table class="lassons">
             <thead>
@@ -39,67 +40,67 @@
             </thead>
             <tr>
               <td class="bold">1</td>
-              <td>Українська література</td>
-              <td>Біологія</td>
-              <td>Українська література</td>
-              <td>Географія</td>
-              <td>Історія України</td>
+              <td><?php echo($monday[0])?></td>
+              <td><?php echo($tuesday[0])?></td>
+              <td><?php echo($wednesday[0])?></td>
+              <td><?php echo($thursday[0])?></td>
+              <td><?php echo($friday[0])?></td>
             </tr>
             <tr>
               <td class="bold">2</td>
-              <td>Фізика</td>
-              <td>Геометрія</td>
-              <td>Фізкультура</td>
-              <td>Біологія</td>
-              <td>Геометрія</td>
+              <td><?php echo($monday[1])?></td>
+              <td><?php echo($tuesday[1])?></td>
+              <td><?php echo($wednesday[1])?></td>
+              <td><?php echo($thursday[1])?></td>
+              <td><?php echo($friday[1])?></td>
             </tr>
             <tr>
               <td class="bold">3</td>
-              <td>Алгебра</td>
-              <td>Українська мова</td>
-              <td>Фізика</td>
-              <td>Фізика</td>
-              <td>Українська мова</td>
+              <td><?php echo($monday[2])?></td>
+              <td><?php echo($tuesday[2])?></td>
+              <td><?php echo($wednesday[2])?></td>
+              <td><?php echo($thursday[2])?></td>
+              <td><?php echo($friday[2])?></td>
             </tr>
             <tr>
               <td class="bold">4</td>
-              <td>Українська мова</td>
-              <td>Історія України/Географія</td>
-              <td>Алгебра</td>
-              <td>Технолонії</td>
-              <td>Хімія</td>
+              <td><?php echo($monday[3])?></td>
+              <td><?php echo($tuesday[3])?></td>
+              <td><?php echo($wednesday[3])?></td>
+              <td><?php echo($thursday[3])?></td>
+              <td><?php echo($friday[3])?></td>
             </tr>
             <tr>
               <td class="bold">5</td>
-              <td>Фізкультура</td>
-              <td>Хімія/Технолонії</td>
-              <td>Українська мова</td>
-              <td>Англійська мова</td>
-              <td>Захист України/Інформатика</td>
+              <td><?php echo($monday[4])?></td>
+              <td><?php echo($tuesday[4])?></td>
+              <td><?php echo($wednesday[4])?></td>
+              <td><?php echo($thursday[4])?></td>
+              <td><?php echo($friday[4])?></td>
             </tr>
             <tr>
               <td class="bold">6</td>
-              <td>Англійська мова</td>
-              <td>Англійська мова</td>
-              <td>Всесвітня історія</td>
-              <td>Громадянська освіта</td>
-              <td>Українська література</td>
+              <td><?php echo($monday[5])?></td>
+              <td><?php echo($tuesday[5])?></td>
+              <td><?php echo($wednesday[5])?></td>
+              <td><?php echo($thursday[5])?></td>
+              <td><?php echo($friday[5])?></td>
             </tr>
             <tr>
               <td class="bold">7</td>
-              <td>Захист України/Інформатика</td>
-              <td>Громадянська освіта</td>
-              <td>Математика(Ф)</td>
-              <td>Фізкультура</td>
-              <td>___________</td>
+              <td><?php echo($monday[6])?></td>
+              <td><?php echo($tuesday[6])?></td>
+              <td><?php echo($wednesday[6])?></td>
+              <td><?php echo($thursday[6])?></td>
+              <td><?php echo($friday[6])?></td>
             </tr>
             <tr>
               <td class="bold">8</td>
-              <td>Зарубіжна література</td>
-              <td>Українська мова(Ф)</td>
-              <td>Захист України/Інформатика</td>
-              <td>Підприємницво(Ф)</td>
-              <td>___________</td>
+              <td><?php echo($monday[7])?></td>
+              <td><?php echo($tuesday[7])?></td>
+              <td><?php echo($wednesday[7])?></td>
+              <td><?php echo($thursday[7])?></td>
+              <td><?php echo($friday[7])?></td>
             </tr>
           </table>
         </div>
@@ -111,56 +112,159 @@
                 <td>№</td>
                 <td>Початок</td>
                 <td>Кінець</td>
-                <td>Перерва</td>
               </tr>
             </thead>  
             <tr>
               <td class="bold">1</td>
-              <td>8:30</td>
-              <td>9:15</td>
-              <td>10</td>
+              <?php if($a[0][4] > 3){
+                echo"
+                <form action='Details\Change_schedule.php' method='post'>
+                  <td>
+                  <input class='submit' name='save' type='submit' value='Зберегти'>
+                  <input class='input' name='Start1' type='text' size='5' maxlenght='5' value='$lessonStart[0]'</td>
+                </form>";
+                echo"
+                <form action='Details\Change_schedule.php' method='post'>
+                  <td>
+                  <input class='submit' name='save' type='submit' value='Зберегти'>
+                  <input class='input' name='Finish1' type='text' size='5' maxlenght='5' value='$lessonFinish[0]'</td>
+                </form>";
+              }else{
+              echo"<td>$lessonStart[0]</td>";
+              echo"<td>$lessonFinish[0]</td>";};?>
             </tr>
             <tr>
               <td class="bold">2</td>
-              <td>9:25</td>
-              <td>10:10</td>
-              <td>20</td>
+              <?php if($a[0][4] > 3){
+                echo"
+                <form action='Details\Change_schedule.php' method='post'>
+                  <td>
+                  <input class='submit' name='save' type='submit' value='Зберегти'>
+                  <input class='input' name='Start2' type='text' size='5' maxlenght='5' value='$lessonStart[1]'</td>
+                </form>";
+                echo"
+                <form action='Details\Change_schedule.php' method='post'>
+                  <td>
+                  <input class='submit' name='save' type='submit' value='Зберегти'>
+                  <input class='input' name='Finish2' type='text' size='5' maxlenght='5' value='$lessonFinish[1]'</td>
+                </form>";
+              }else{
+              echo"<td>$lessonStart[1]</td>";
+              echo"<td>$lessonFinish[1]</td>";};?>
             </tr>
             <tr>
               <td class="bold">3</td>
-              <td>10:30</td>
-              <td>11:15</td>
-              <td>15</td>
+              <?php if($a[0][4] > 3){
+                echo"
+                <form action='Details\Change_schedule.php' method='post'>
+                  <td>
+                  <input class='submit' name='save' type='submit' value='Зберегти'>
+                  <input class='input' name='Start3' type='text' size='5' maxlenght='5' value='$lessonStart[2]'</td>
+                </form>";
+                echo"
+                <form action='Details\Change_schedule.php' method='post'>
+                  <td>
+                  <input class='submit' name='save' type='submit' value='Зберегти'>
+                  <input class='input' name='Finish3' type='text' size='5' maxlenght='5' value='$lessonFinish[2]'</td>
+                </form>";
+              }else{
+              echo"<td>$lessonStart[2]</td>";
+              echo"<td>$lessonFinish[2]</td>";};?>
             </tr>
             <tr>
               <td class="bold">4</td>
-              <td>11:30</td>
-              <td>12:15</td>
-              <td>10</td>
+              <?php if($a[0][4] > 3){
+                echo"
+                <form action='Details\Change_schedule.php' method='post'>
+                  <td>
+                  <input class='submit' name='save' type='submit' value='Зберегти'>
+                  <input class='input' name='Start4' type='text' size='5' maxlenght='5' value='$lessonStart[3]'</td>
+                </form>";
+                echo"
+                <form action='Details\Change_schedule.php' method='post'>
+                  <td>
+                  <input class='submit' name='save' type='submit' value='Зберегти'>
+                  <input class='input' name='Finish4' type='text' size='5' maxlenght='5' value='$lessonFinish[3]'</td>
+                </form>";
+              }else{
+              echo"<td>$lessonStart[3]</td>";
+              echo"<td>$lessonFinish[3]</td>";};?>
             </tr>
             <tr>
               <td class="bold">5</td>
-              <td>12:25</td>
-              <td>13:10</td>
-              <td>10</td>
+              <?php if($a[0][4] > 3){
+                echo"
+                <form action='Details\Change_schedule.php' method='post'>
+                  <td>
+                  <input class='submit' name='save' type='submit' value='Зберегти'>
+                  <input class='input' name='Start5' type='text' size='5' maxlenght='5' value='$lessonStart[4]'</td>
+                </form>";
+                echo"
+                <form action='Details\Change_schedule.php' method='post'>
+                  <td>
+                  <input class='submit' name='save' type='submit' value='Зберегти'>
+                  <input class='input' name='Finish5' type='text' size='5' maxlenght='5' value='$lessonFinish[4]'</td>
+                </form>";
+              }else{
+              echo"<td>$lessonStart[4]</td>";
+              echo"<td>$lessonFinish[4]</td>";};?>
             </tr>
             <tr>
               <td class="bold">6</td>
-              <td>13:20</td>
-              <td>14:05</td>
-              <td>5</td>
+              <?php if($a[0][4] > 3){
+                echo"
+                <form action='Details\Change_schedule.php' method='post'>
+                  <td>
+                  <input class='submit' name='save' type='submit' value='Зберегти'>
+                  <input class='input' name='Start6' type='text' size='5' maxlenght='5' value='$lessonStart[5]'</td>
+                </form>";
+                echo"
+                <form action='Details\Change_schedule.php' method='post'>
+                  <td>
+                  <input class='submit' name='save' type='submit' value='Зберегти'>
+                  <input class='input' name='Finish6' type='text' size='5' maxlenght='5' value='$lessonFinish[5]'</td>
+                </form>";
+              }else{
+              echo"<td>$lessonStart[5]</td>";
+              echo"<td>$lessonFinish[5]</td>";};?>
             </tr>
             <tr>
               <td class="bold">7</td>
-              <td>14:10</td>
-              <td>14:55</td>
-              <td>5</td>
+              <?php if($a[0][4] > 3){
+                echo"
+                <form action='Details\Change_schedule.php' method='post'>
+                  <td>
+                  <input class='submit' name='save' type='submit' value='Зберегти'>
+                  <input class='input' name='Start7' type='text' size='5' maxlenght='5' value='$lessonStart[6]'</td>
+                </form>";
+                echo"
+                <form action='Details\Change_schedule.php' method='post'>
+                  <td>
+                  <input class='submit' name='save' type='submit' value='Зберегти'>
+                  <input class='input' name='Finish7' type='text' size='5' maxlenght='5' value='$lessonFinish[6]'</td>
+                </form>";
+              }else{
+              echo"<td>$lessonStart[6]</td>";
+              echo"<td>$lessonFinish[6]</td>";};?>
             </tr>
             <tr>
               <td class="bold">8</td>
-              <td>15:00</td>
-              <td>15:40</td>
-              <td>_</td>
+              <?php if($a[0][4] > 3){
+                echo"
+                <form action='Details\Change_schedule.php' method='post'>
+                  <td>
+                  <input class='submit' name='save' type='submit' value='Зберегти'>
+                  <input class='input' name='Start8' type='text' size='5' maxlenght='5' value='$lessonStart[7]'</td>
+                </form>";
+                echo"
+                <form action='Details\Change_schedule.php' method='post'>
+                  <td>
+                  <input class='submit' name='save' type='submit' value='Зберегти'>
+                  <input class='input' name='Finish8' type='text' size='5' maxlenght='5' value='$lessonFinish[7]'</td>
+                </form>";
+              }else{
+              echo"<td>$lessonStart[7]</td>";
+              echo"<td>$lessonFinish[7]</td>";};?>
             </tr>
           </table>
         </div>
