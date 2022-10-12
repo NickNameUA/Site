@@ -104,12 +104,12 @@
             </tr>
           </table>
         </div>
+        <h2 class="title">Розклад дзвінків</h2>
         <div>
-          <h2 class="title">Розклад дзвінків</h2>
           <table class="bells">
             <thead>
               <tr>
-                <td>№</td>
+                <td >№</td>
                 <td>Початок</td>
                 <td>Кінець</td>
               </tr>
