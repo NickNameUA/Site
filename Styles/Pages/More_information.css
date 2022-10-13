@@ -1,0 +1,14 @@
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+h2 {
+  margin: 7% auto 2% auto;
+}
+
+.paragraph {
+  background-color: #FFFFFF;
+  width: 70%;
+  margin-left: 15%;
+}
+

@@ -20,7 +20,7 @@
 </head>
 <body onload="check()">
   <div class="pagebodyRules">
-    <div id="mainRules">
+    <div id="mainAlternative">
       <h1>Загальні правила поведінки учнів у школі</h1>
       <p>
       Загальна частина </P>

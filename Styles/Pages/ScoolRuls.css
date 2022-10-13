@@ -2,19 +2,6 @@ body {
     font-family: "Oswald", sans-serif;
 }
 
-#mainRules {
-  width: 70%;
-  background-color: var(--main-bg-color);
-  height: fit-content;
-  box-sizing: border-box;
-  margin-bottom: 10%;
-  padding: 3%;
-  border: 1px var(--second-bg-color) solid;
-  border-bottom: none;
-  position: relative;
-  display: inline-block;
-}
-
 .pagebodyRules {
   margin-left: 20%;
   margin-right: auto;

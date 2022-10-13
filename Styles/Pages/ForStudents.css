@@ -23,13 +23,6 @@ thead {
   background: var(--second-bg-color);
 }
 
-.tr {
-  /* width: 50%;  */
-  /* margin-left: 10%; */
-  /* margin-right: 10%;  */
-  /* padding-right: 20px;*/
-} 
-
 .bells {
   width: 30%;
   margin-left: auto;

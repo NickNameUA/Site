@@ -55,6 +55,23 @@ body {
   text-align: center;
 }
 
+#mainAlternative {
+  width: 70%;
+  background-color: var(--main-bg-color);
+  height: fit-content;
+  box-sizing: border-box;
+  margin-bottom: 10%;
+  padding: 3%;
+  /* border: 1px var(--second-bg-color) solid; */
+  border-bottom: none;
+  position: relative;
+  display: inline-block;
+}
+
+a {
+  cursor: pointer;
+}
+
 #scrlBtnTop {
   position: fixed;
   right: 0%;
