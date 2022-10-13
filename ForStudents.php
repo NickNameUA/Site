@@ -104,168 +104,91 @@
             </tr>
           </table>
         </div>
-        <h2 class="title">Розклад дзвінків</h2>
         <div>
+          <h2 class="title">Розклад дзвінків</h2>
           <table class="bells">
             <thead>
               <tr>
-                <td >№</td>
+                <td>№</td>
                 <td>Початок</td>
                 <td>Кінець</td>
               </tr>
             </thead>  
-            <tr>
-              <td class="bold">1</td>
-              <?php if($a[0][4] > 3){
-                echo"
-                <form action='Details\Change_schedule.php' method='post'>
-                  <td>
-                  <input class='submit' name='save' type='submit' value='Зберегти'>
-                  <input class='input' name='Start1' type='text' size='5' maxlenght='5' value='$lessonStart[0]'</td>
-                </form>";
-                echo"
-                <form action='Details\Change_schedule.php' method='post'>
-                  <td>
-                  <input class='submit' name='save' type='submit' value='Зберегти'>
-                  <input class='input' name='Finish1' type='text' size='5' maxlenght='5' value='$lessonFinish[0]'</td>
-                </form>";
-              }else{
-              echo"<td>$lessonStart[0]</td>";
-              echo"<td>$lessonFinish[0]</td>";};?>
-            </tr>
-            <tr>
-              <td class="bold">2</td>
-              <?php if($a[0][4] > 3){
-                echo"
-                <form action='Details\Change_schedule.php' method='post'>
-                  <td>
-                  <input class='submit' name='save' type='submit' value='Зберегти'>
-                  <input class='input' name='Start2' type='text' size='5' maxlenght='5' value='$lessonStart[1]'</td>
-                </form>";
-                echo"
-                <form action='Details\Change_schedule.php' method='post'>
-                  <td>
-                  <input class='submit' name='save' type='submit' value='Зберегти'>
-                  <input class='input' name='Finish2' type='text' size='5' maxlenght='5' value='$lessonFinish[1]'</td>
-                </form>";
-              }else{
-              echo"<td>$lessonStart[1]</td>";
-              echo"<td>$lessonFinish[1]</td>";};?>
-            </tr>
-            <tr>
-              <td class="bold">3</td>
-              <?php if($a[0][4] > 3){
-                echo"
-                <form action='Details\Change_schedule.php' method='post'>
-                  <td>
-                  <input class='submit' name='save' type='submit' value='Зберегти'>
-                  <input class='input' name='Start3' type='text' size='5' maxlenght='5' value='$lessonStart[2]'</td>
-                </form>";
-                echo"
-                <form action='Details\Change_schedule.php' method='post'>
-                  <td>
-                  <input class='submit' name='save' type='submit' value='Зберегти'>
-                  <input class='input' name='Finish3' type='text' size='5' maxlenght='5' value='$lessonFinish[2]'</td>
-                </form>";
-              }else{
-              echo"<td>$lessonStart[2]</td>";
-              echo"<td>$lessonFinish[2]</td>";};?>
-            </tr>
-            <tr>
-              <td class="bold">4</td>
-              <?php if($a[0][4] > 3){
-                echo"
-                <form action='Details\Change_schedule.php' method='post'>
-                  <td>
-                  <input class='submit' name='save' type='submit' value='Зберегти'>
-                  <input class='input' name='Start4' type='text' size='5' maxlenght='5' value='$lessonStart[3]'</td>
-                </form>";
-                echo"
-                <form action='Details\Change_schedule.php' method='post'>
-                  <td>
-                  <input class='submit' name='save' type='submit' value='Зберегти'>
-                  <input class='input' name='Finish4' type='text' size='5' maxlenght='5' value='$lessonFinish[3]'</td>
-                </form>";
-              }else{
-              echo"<td>$lessonStart[3]</td>";
-              echo"<td>$lessonFinish[3]</td>";};?>
-            </tr>
-            <tr>
-              <td class="bold">5</td>
-              <?php if($a[0][4] > 3){
-                echo"
-                <form action='Details\Change_schedule.php' method='post'>
-                  <td>
-                  <input class='submit' name='save' type='submit' value='Зберегти'>
-                  <input class='input' name='Start5' type='text' size='5' maxlenght='5' value='$lessonStart[4]'</td>
-                </form>";
-                echo"
-                <form action='Details\Change_schedule.php' method='post'>
-                  <td>
-                  <input class='submit' name='save' type='submit' value='Зберегти'>
-                  <input class='input' name='Finish5' type='text' size='5' maxlenght='5' value='$lessonFinish[4]'</td>
-                </form>";
-              }else{
-              echo"<td>$lessonStart[4]</td>";
-              echo"<td>$lessonFinish[4]</td>";};?>
-            </tr>
-            <tr>
-              <td class="bold">6</td>
-              <?php if($a[0][4] > 3){
-                echo"
-                <form action='Details\Change_schedule.php' method='post'>
-                  <td>
-                  <input class='submit' name='save' type='submit' value='Зберегти'>
-                  <input class='input' name='Start6' type='text' size='5' maxlenght='5' value='$lessonStart[5]'</td>
-                </form>";
-                echo"
-                <form action='Details\Change_schedule.php' method='post'>
-                  <td>
-                  <input class='submit' name='save' type='submit' value='Зберегти'>
-                  <input class='input' name='Finish6' type='text' size='5' maxlenght='5' value='$lessonFinish[5]'</td>
-                </form>";
-              }else{
-              echo"<td>$lessonStart[5]</td>";
-              echo"<td>$lessonFinish[5]</td>";};?>
-            </tr>
-            <tr>
-              <td class="bold">7</td>
-              <?php if($a[0][4] > 3){
-                echo"
-                <form action='Details\Change_schedule.php' method='post'>
-                  <td>
-                  <input class='submit' name='save' type='submit' value='Зберегти'>
-                  <input class='input' name='Start7' type='text' size='5' maxlenght='5' value='$lessonStart[6]'</td>
-                </form>";
-                echo"
-                <form action='Details\Change_schedule.php' method='post'>
-                  <td>
-                  <input class='submit' name='save' type='submit' value='Зберегти'>
-                  <input class='input' name='Finish7' type='text' size='5' maxlenght='5' value='$lessonFinish[6]'</td>
-                </form>";
-              }else{
-              echo"<td>$lessonStart[6]</td>";
-              echo"<td>$lessonFinish[6]</td>";};?>
-            </tr>
-            <tr>
-              <td class="bold">8</td>
-              <?php if($a[0][4] > 3){
-                echo"
-                <form action='Details\Change_schedule.php' method='post'>
-                  <td>
-                  <input class='submit' name='save' type='submit' value='Зберегти'>
-                  <input class='input' name='Start8' type='text' size='5' maxlenght='5' value='$lessonStart[7]'</td>
-                </form>";
-                echo"
-                <form action='Details\Change_schedule.php' method='post'>
-                  <td>
-                  <input class='submit' name='save' type='submit' value='Зберегти'>
-                  <input class='input' name='Finish8' type='text' size='5' maxlenght='5' value='$lessonFinish[7]'</td>
-                </form>";
-              }else{
-              echo"<td>$lessonStart[7]</td>";
-              echo"<td>$lessonFinish[7]</td>";};?>
-            </tr>
+            <form action='Details\Change_schedule.php' method='post'>
+              <tr>
+                <td class="bold">1</td>
+                <?php if($a[0][4] > 3){
+                  echo"<td><input class='input' name='Start1' type='text' size='5' maxlenght='5' value='$lessonStart[0]'</td>";
+                  echo"<td><input class='input' name='Finish1' type='text' size='5' maxlenght='5' value='$lessonFinish[0]'</td>";
+                }else{
+                echo"<td>$lessonStart[0]</td>";
+                echo"<td>$lessonFinish[0]</td>";};?>
+              </tr>
+              <tr>
+                <td class="bold">2</td>
+                <?php if($a[0][4] > 3){
+                  echo"<td><input class='input' name='Start2' type='text' size='5' maxlenght='5' value='$lessonStart[1]'</td>";
+                  echo"<td><input class='input' name='Finish2' type='text' size='5' maxlenght='5' value='$lessonFinish[1]'</td>";
+                }else{
+                echo"<td>$lessonStart[1]</td>";
+                echo"<td>$lessonFinish[1]</td>";};?>
+              </tr>
+              <tr>
+                <td class="bold">3</td>
+                <?php if($a[0][4] > 3){
+                  echo"<td><input class='input' name='Start3' type='text' size='5' maxlenght='5' value='$lessonStart[2]'</td>";
+                  echo"<td><input class='input' name='Finish3' type='text' size='5' maxlenght='5' value='$lessonFinish[2]'</td>";
+                }else{
+                echo"<td>$lessonStart[2]</td>";
+                echo"<td>$lessonFinish[2]</td>";};?>
+              </tr>
+              <tr>
+                <td class="bold">4</td>
+                <?php if($a[0][4] > 3){
+                  echo"<td><input class='input' name='Start4' type='text' size='5' maxlenght='5' value='$lessonStart[3]'</td>";
+                  echo"<td><input class='input' name='Finish4' type='text' size='5' maxlenght='5' value='$lessonFinish[3]'</td>";
+                }else{
+                echo"<td>$lessonStart[3]</td>";
+                echo"<td>$lessonFinish[3]</td>";};?>
+              </tr>
+              <tr>
+                <td class="bold">5</td>
+                <?php if($a[0][4] > 3){
+                  echo"<td><input class='input' name='Start5' type='text' size='5' maxlenght='5' value='$lessonStart[4]'</td>";
+                  echo"<td><input class='input' name='Finish5' type='text' size='5' maxlenght='5' value='$lessonFinish[4]'</td>";
+                }else{
+                echo"<td>$lessonStart[4]</td>";
+                echo"<td>$lessonFinish[4]</td>";};?>
+              </tr>
+              <tr>
+                <td class="bold">6</td>
+                <?php if($a[0][4] > 3){
+                  echo"<td><input class='input' name='Start6' type='text' size='5' maxlenght='5' value='$lessonStart[5]'</td>";
+                  echo"<td><input class='input' name='Finish6' type='text' size='5' maxlenght='5' value='$lessonFinish[5]'</td>";
+                }else{
+                echo"<td>$lessonStart[5]</td>";
+                echo"<td>$lessonFinish[5]</td>";};?>
+              </tr>
+              <tr>
+                <td class="bold">7</td>
+                <?php if($a[0][4] > 3){
+                  echo"<td><input class='input' name='Start7' type='text' size='5' maxlenght='5' value='$lessonStart[6]'</td>";
+                  echo"<td><input class='input' name='Finish7' type='text' size='5' maxlenght='5' value='$lessonFinish[6]'</td>";
+                }else{
+                echo"<td>$lessonStart[6]</td>";
+                echo"<td>$lessonFinish[6]</td>";};?>
+              </tr>
+              <tr>
+                <td class="bold">8</td>
+                <?php if($a[0][4] > 3){
+                  echo"<td><input class='input' name='Start8' type='text' size='5' maxlenght='5' value='$lessonStart[7]'</td>";
+                  echo"<td><input class='input' name='Finish8' type='text' size='5' maxlenght='5' value='$lessonFinish[7]'</td>";
+                }else{
+                echo"<td>$lessonStart[7]</td>";
+                echo"<td>$lessonFinish[7]</td>";};?>
+              </tr>
+              <input class='submit' name='save' type='submit' value='Зберегти'>
+            </form>
           </table>
         </div>
       </div>
