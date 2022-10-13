@@ -3,6 +3,12 @@
     height: 80vh;
     width: 100%;
   }
-  
-}
 
+  .navbar {
+    height: auto;
+  }
+
+  #pagebody {
+    margin-top: 5%;
+  }
+}

@@ -8,12 +8,12 @@
       class="dropbtn"
       onclick="myFunction(3)">
       <img
-        alt="Menu"
+      alt="Menu"
         src="/Img/Button/BtnMenu.png"
         width="47"
         height="47"
         />
-        <i class="fa fa-caret-down viseOff"></i>
+      <i class="fa fa-caret-down viseOff"></i>
     </button>
     <div class="dropdown-content" id="3">
       <button class="ColorSet" id="colorSetBut" onclick="changeColorSet()">

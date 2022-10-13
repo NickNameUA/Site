@@ -11,7 +11,7 @@
 }
 
 .pagebody {
-  margin: 0% 4% 0% 4%;
+  margin: 10vh 4% 0% 4%;
 }
 
 body::-webkit-scrollbar {
@@ -44,6 +44,7 @@ body {
 #main {
   background-color: var(--main-bg-color);
   width: 100%;
+  min-height: 60vh;
   height: fit-content;
   box-sizing: border-box;
   margin-bottom: 10%;
@@ -57,13 +58,15 @@ body {
 
 #mainAlternative {
   background-color: var(--main-bg-color);
-  height: fit-content;
+  width: 92vw;
+  min-height: 60vh;
   box-sizing: border-box;
   margin-bottom: 10%;
   padding: 3%;
   border: 1px var(--second-bg-color) solid;
   position: relative;
   display: inline-block;
+  text-align: center;
 }
 
 a {
@@ -119,6 +122,7 @@ a {
 
 .viseOff {
   visibility: hidden;
+  display: none;
 }
 
 footer {

@@ -7,8 +7,6 @@ h2 {
 }
 
 a {
-  color: black;
+  color: var(--second-bg-color);
   text-decoration: none;
-  font-size: 22px;
 }
-

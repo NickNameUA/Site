@@ -20,7 +20,7 @@
 </head>
 <body onload="check()">
   <div id="pagebody">
-    <div id="main">
+    <div id="mainAlternative">
       <div>
         <h2 class="title">Розклад уроків</h2>
         <h3>Розклад уроків 10-Б клас</h3>
