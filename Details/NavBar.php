@@ -40,7 +40,7 @@
       <?php if($a[0][4] > 1){echo '<a href="#for_parents">Для батьків</a>';}?>
       <?php if($a[0][4] > 2){echo '<a href="#for_teachers">Для вчителів</a>';}?>
       <a href="#main_info">Основна інформація</a>
-      <a href="#more_info">Додаткові відомості</a>
+      <a href="More_information.php">Додаткові відомості</a>
       </div>
   </div>
   <?php if($a[0][4] == 5){

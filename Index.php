@@ -28,7 +28,7 @@
         width="100%"
       />
     </div>
-    <div class="pagebodyMain">
+    <div id="pagebody">
       <div id="main">
         <div class="post">
           <hr />
