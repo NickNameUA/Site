@@ -16,10 +16,23 @@ thead {
   margin-top: 5%;
 }
 
-.bells,
 .lassons {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
   background: var(--second-bg-color);
+}
+
+.tr {
+  /* width: 50%;  */
+  /* margin-left: 10%; */
+  /* margin-right: 10%;  */
+  /* padding-right: 20px;*/
+} 
+
+.bells {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
 }
