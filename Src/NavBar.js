@@ -11,16 +11,12 @@ window.onclick = function (element) {
   if (!element.target.matches(".dropbtn")) {
     const element1 = document.getElementById(1);
     const element2 = document.getElementById(2);
-    const element3 = document.getElementById(3);
     const element4 = document.getElementById(4);
     if (element1.classList.contains("show")) {
       removedrop(element1);
     }
     if (element2.classList.contains("show")) {
       removedrop(element2);
-    }
-    if (element3.classList.contains("show")) {
-      removedrop(element3);
     }
     if (element4.classList.contains("show")) {
       removedrop(element4);

@@ -3,7 +3,11 @@
     right: 0%;
     position: fixed;
   }
-
+  .navbar {
+    width: 100vw;
+    left: 0%;
+    right: 0%;
+  }
   #profile {
     margin: 0%;
   }
@@ -23,12 +27,6 @@
 
   .dropdown:nth-child(3) {
     display: block;
-  }
-
-  #menuBtn {
-    background-color: aqua;
-    margin: auto;
-    width: fit-content;
   }
 
   #myDropdown2 {

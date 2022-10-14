@@ -1,46 +1,33 @@
 <?php include "get_info.php";?>
-<div class="navbar">
+<div class="navbar" style="background-image: url(Img\Button\BtnMenu.png);">
   <a id="index" href="Index.php">Головна</a>
   <a id="news" href="News.php">Новини</a>
   <!--Main button-->
-  <div class="dropdown" id="menuBtn">
-    <button
-      class="dropbtn"
-      onclick="myFunction(3)">
-      <img
-      alt="Menu"
-        src="/Img/Button/BtnMenu.png"
-        width="47"
-        height="47"
-        />
-      <i class="fa fa-caret-down viseOff"></i>
-    </button>
-    <div class="dropdown-content" id="3">
-      <button class="ColorSet" id="colorSetBut" onclick="changeColorSet()">
-        <img
-        id="colorSet"
-        src="/Img/Button/Dark/ChangeDark.png"
-        height="47"
-        width="47"
-        alt="Profile"/>
-      </button>
-      <a href="#for_students">Для учнів</a>
-      <a href="#for_students">Для учнів</a>
-      <a href="#for_students">Для учнів</a>
-      <a href="#for_students">Для учнів</a>
-    </div>
-  </div>
+    <select id="menuBtn" name="Menu" onchange="window.location.href = this.options[this.selectedIndex].value">
+      <option class="viseOff" value=""></option>
+      <?php if($a[0][4] > 0){echo '
+        <option value="ForStudents.php">Для учнів</option>
+      ';}?>
+      <?php if($a[0][4] > 1){echo '
+        <option value="#for_parents">Для батьків</option>
+      ';}?>
+      <?php if($a[0][4] > 2){echo '
+        <option value="#for_teachers">Для вчителів</option>
+      ';}?>
+        <option value="More_information.php">Більше інформації</option>
+        <option value="#main_info">Основна інформація</option>
+    </select>
   <div class="dropdown">
     <button class="dropbtn" onclick="myFunction(2)">
       Про школу
       <i class="fa fa-caret-down"></i>
     </button>
       <div class="dropdown-content" id="2">
-      <?php if($a[0][4] > 0){echo '<a href="ForStudents.php">Для учнів</a>';}?>
-      <?php if($a[0][4] > 1){echo '<a href="#for_parents">Для батьків</a>';}?>
-      <?php if($a[0][4] > 2){echo '<a href="#for_teachers">Для вчителів</a>';}?>
-      <a href="#main_info">Основна інформація</a>
-      <a href="More_information.php">Додаткові відомості</a>
+        <?php if($a[0][4] > 0){echo '<a href="ForStudents.php">Для учнів</a>';}?>
+        <?php if($a[0][4] > 1){echo '<a href="#for_parents">Для батьків</a>';}?>
+        <?php if($a[0][4] > 2){echo '<a href="#for_teachers">Для вчителів</a>';}?>
+        <a href="#main_info">Основна інформація</a>
+        <a href="More_information.php">Додаткові відомості</a>
       </div>
   </div>
   <?php if($a[0][4] == 5){
@@ -51,7 +38,7 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content" id="4">
-        <a href="AccountList.php">Cписок аккаунтів</a>
+          <a href="AccountList.php">Cписок аккаунтів</a>
         </div>
       </div>';}?>
   <div class="dropdown">
