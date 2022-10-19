@@ -24,7 +24,6 @@
         <a href='InformationAboutSchool.php'>Інформація про школу</a></br>
         <a href='Map.php'>План-карта</a></br>
         <a href="Plan.php">План-схема</a></br>
-        <a href=""></a>
     </div>
   </div>
 </body>

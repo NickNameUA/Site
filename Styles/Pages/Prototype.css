@@ -70,6 +70,17 @@ body {
   text-align: center;
 }
 
+#mainAlternativeSecond {
+  background-color: var(--main-bg-color);
+  min-height: 60vh;
+  box-sizing: border-box;
+  margin-bottom:10vh;
+  padding: 3%;
+  border: 1px var(--second-bg-color) solid;
+  position: relative;
+  display: inline-block;
+}
+
 a {
   cursor: pointer;
 }
