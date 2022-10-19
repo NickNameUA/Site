@@ -21,8 +21,7 @@
 <body onload="check()">
   <div id="pagebody">
     <div id="mainAlternative">
-      <a href='AdmissionToSchool.php'>Вступ до 1 класу</a></br>
-      <a href='AccessForPeopleWithDisabilities.php'>Доступ для осіб з обмеженими можливостями</a>
+      <a class='a' href='AdmissionToSchool.php'>Вступ до 1 класу</a></br>
     </div>
   </div>
 </body>

@@ -18,9 +18,11 @@ window.onclick = function (element) {
     if (element2.classList.contains("show")) {
       removedrop(element2);
     }
-    if (element4.classList.contains("show")) {
-      removedrop(element4);
-    }
+    try {
+      if (element4.classList.contains("show")) {
+        removedrop(element4);
+      }
+    } catch (e) {}
   }
 };
 

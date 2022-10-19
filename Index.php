@@ -71,6 +71,6 @@
       </div>
     </div>
     <!--Button scroll top-->
-    <?php include "Details/Footer.php";?>
   </body>
+  <?php include "Details/Footer.php";?>
 </html>
