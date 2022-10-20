@@ -22,8 +22,6 @@
   <div id="pagebody">
     <div id="mainAlternativeThird" class="main">
         <aside class="sidebar">
-          <a href="AdmissionToSchool.php">Вступ до першого класу</a></br>
-          <a href="Map.php">Карта</a></br>
           <a href="SchoolRuls.php">Правела поведінки в школі</a></br>
           <a href="HistoryOfSchool">Історія Ліцея</a>
         </aside>

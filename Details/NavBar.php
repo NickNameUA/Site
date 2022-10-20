@@ -28,6 +28,7 @@
         <?php if($a[0][4] > 2){echo '<a href="#for_teachers">Для вчителів</a>';}?>
         <a href="#main_info">Основна інформація</a>
         <a href="More_information.php">Додаткові відомості</a>
+        <a href="Map.php">Карта</a>
       </div>
   </div>
   <?php if($a[0][4] == 5){
@@ -61,7 +62,7 @@
       >Youtube</a
       >
       <h4>Електронна пошта</h4>
-      <a href="mailto:cvlyceum21@gmial.com">cvlyceum21@gmial.com</a>
+      <a href="mailto:cvlyceum21@gmail.com">cvlyceum21@gmail.com</a>
     </div>
   </div>
   <button class="ColorSet" id="colorSetBut" onclick="changeColorSet()">

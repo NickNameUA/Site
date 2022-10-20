@@ -24,13 +24,10 @@
     <div id="mainAlternative">
       <iframe id="iframeMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4592.862774517651!2d25.943674026458744!3d48.33901302971785!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473407b14b41b3b3%3A0xc2375a3891d0b7ff!2z0KfQtdGA0L3RltCy0LXRhtGM0LrQuNC5INC70ZbRhtC10Lkg4oSWMjE!5e1!3m2!1suk!2sua!4v1666178310030!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <div>
-        <button onclick="swapFlag('liceum')" class="flagMapBtn">Ліцей</button>
-        <button onclick="swapFlag('busStation')" class="flagMapBtn">Автобусна зупинка поряд із ліцеєм</button>
-        <button onclick="swapFlag('exitForPD')" class="flagMapBtn">Вхід для людей з обмеженими можливостями</button>
-        <p>
-        До школи можна доїхати на таких автобусних маршрутах: №15, №16, №37, №120 </br>
-        до зупинки Ліцей №21
-        </p>
+        <button class="flagMapBtn" onclick="swapFlag('liceum')">Ліцей</button>
+        <button class="flagMapBtn" onclick="swapFlag('busStation')">Автобусна зупинка поряд із ліцеєм</button>
+        <button class="flagMapBtn" onclick="swapFlag('exitForPD')">Вхід для людей з обмеженими можливостями</button>
+        <button class="flagMapBtn" onclick='changeLink("https://goo.gl/maps/WeCR96ryBw6jGDde6?hl=ua")'>Прокласти маршрут</button>
       </div>
     </div>
   </div>
