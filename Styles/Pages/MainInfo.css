@@ -1,0 +1,29 @@
+body {
+    font-family: "Oswald", sans-serif;
+  }
+
+.main {
+    display: flex;
+    width: 70%;
+    margin-left: 15%;
+}
+
+#mainAlternativeThird {
+  background-color: var(--main-bg-color);
+  min-height: 60vh;
+  box-sizing: border-box;
+  margin-bottom:10vh;
+  padding: 3%;
+  border: 1px var(--second-bg-color) solid;
+  position: relative;
+}
+
+.sidebar {
+  padding: 3%;
+  box-sizing: border-box;
+  border: 1px var(--second-bg-color) solid;
+}
+
+.MainInfo {
+  margin-left: 17%;
+}

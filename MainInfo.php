@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Styles/Pages/More_information.css"/>
+  <link rel="stylesheet" href="Styles/Pages/MainInfo.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-  <title>Додаткові відомості</title>
+  <title>Основна інформація</title>
   <?php
   include "Details/Links.php";
   include "Details/NavBar.php";
@@ -20,9 +20,16 @@
 </head>
 <body onload="check()">
   <div id="pagebody">
-    <div id="mainAlternative">
-      <a href='AdmissionToSchool.php'>Вступ до 1 класу</a></br>
-      <a href='AccessForPeopleWithDisabilities.php'>Доступ для осіб з обмеженими можливостями</a>
+    <div id="mainAlternativeThird" class="main">
+        <aside class="sidebar">
+          <a href="AdmissionToSchool.php">Вступ до першого класу</a></br>
+          <a href="Map.php">Карта</a></br>
+          <a href="SchoolRuls.php">Правела поведінки в школі</a></br>
+          <a href="HistoryOfSchool">Історія Ліцея</a>
+        </aside>
+        <div class="MainInfo">
+          Hallo
+        </div>
     </div>
   </div>
 </body>
