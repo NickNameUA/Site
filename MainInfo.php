@@ -13,10 +13,12 @@
   <?php
   include "Details/Links.php";
   include "Details/NavBar.php";
+  include "Details/get_text.php";
   ?>
   <script src="Src/NavBar.js"></script>
   <script src="Src/Scroll.js"></script>
   <script src="Src/Theame.js"></script>
+  <script src="Src/AutoGrow.js"></script>
 </head>
 <body onload="check()">
   <div id="pagebody">
@@ -26,7 +28,15 @@
           <a href="HistoryOfSchool">Історія Ліцея</a>
         </aside>
         <div class="MainInfo">
-          Hallo
+          <?php if($a[0][4] > 0){echo "<form action='Details/Change_text.php' method='post'>";}?>
+            <h2>Правела поведінки в школі</h2>
+              <textarea id='SchoolRules' <?php if($a[0][4] < 4){echo "disabled";}else{echo "name='SchoolRules'";}?> oninput='auto_grow("SchoolRules")'><?php echo"$SchoolRules[1]"?></textarea>
+            <h2>Історія Ліцея</h2>
+              <textarea id='HistoryOfSchool' <?php if($a[0][4] < 4){echo "disabled";}else{echo "name='HistoryOfSchool'";}?> oninput='auto_grow("HistoryOfSchool")'><?php echo"$HistoryOfSchool[1]";?></textarea>
+          <?php if($a[0][4] > 0){
+            echo "<input name='do' type='submit' value='Зберегти'>";
+            echo "</form>";
+          }?>    
         </div>
     </div>
   </div>

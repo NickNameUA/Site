@@ -1,3 +1,9 @@
 #pagebodyNews {
   margin: 10% 4% 0% 4%;
 }
+
+textarea {
+  resize: none;
+  overflow: hidden;
+  min-height: 50px;
+}

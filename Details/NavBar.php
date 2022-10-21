@@ -26,7 +26,7 @@
         <?php if($a[0][4] > 0){echo '<a href="ForStudents.php">Для учнів</a>';}?>
         <?php if($a[0][4] > 1){echo '<a href="#for_parents">Для батьків</a>';}?>
         <?php if($a[0][4] > 2){echo '<a href="#for_teachers">Для вчителів</a>';}?>
-        <a href="#main_info">Основна інформація</a>
+        <a href="MainInfo.php">Основна інформація</a>
         <a href="More_information.php">Додаткові відомості</a>
         <a href="Map.php">Карта</a>
       </div>
