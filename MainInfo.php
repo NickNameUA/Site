@@ -24,14 +24,14 @@
   <div id="pagebody">
     <div id="mainAlternativeThird" class="main">
         <aside class="sidebar">
-          <a href="SchoolRuls.php">Правела поведінки в школі</a></br>
-          <a href="HistoryOfSchool">Історія Ліцея</a>
+          <a href="#Правела поведінки в школі">Правела поведінки в школі</a></br>
+          <a href="#Історія Ліцея">Історія Ліцея</a>
         </aside>
         <div class="MainInfo">
           <?php if($a[0][4] > 0){echo "<form action='Details/Change_text.php' method='post'>";}?>
-            <h2>Правела поведінки в школі</h2>
+            <h2 id="Правела поведінки в школі">Правела поведінки в школі</h2>
               <textarea id='SchoolRules' <?php if($a[0][4] < 4){echo "disabled";}else{echo "name='SchoolRules'";}?> oninput='auto_grow("SchoolRules")'><?php echo"$SchoolRules[1]"?></textarea>
-            <h2>Історія Ліцея</h2>
+            <h2 id="Історія Ліцея">Історія Ліцея</h2>
               <textarea id='HistoryOfSchool' <?php if($a[0][4] < 4){echo "disabled";}else{echo "name='HistoryOfSchool'";}?> oninput='auto_grow("HistoryOfSchool")'><?php echo"$HistoryOfSchool[1]";?></textarea>
           <?php if($a[0][4] > 0){
             echo "<input name='do' type='submit' value='Зберегти'>";
