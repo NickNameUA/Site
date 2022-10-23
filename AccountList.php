@@ -27,112 +27,34 @@ $_SESSION['StatusCreate'] = NULL;
       <div id="main">
 				<tr>
           <h1>Адміністратори</h1>
-          <form action='Details/AccountListDo.php' method='post'>
-          <input class='ListBtn' type='submit' name='Do' value='Створити'>
-          <input class='id' name='status' type='text' size='0' maxlength='2' value='5'>
-          </form>
+          <?php getBut(5)?>
           <div class='Info'>
-            <?php foreach($Admins as $key){
-              ?><form action='Details/AccountListDo.php' method='post'><?php
-              echo"<input class='ListInp' type='submit' name='Do' value='Зберегти'>";
-              echo"<input class='ListInp' type='submit' name='Do' value='Видалити'>";
-              echo"<input class='id' name='id' type='text' size='0' maxlength='10000' value='$key[4]'>"; 
-              echo"<input class='ListInp' name='firstName' type='text' size='10' maxlength='20' value='$key[0]'>";
-              echo"<input class='ListInp' name='lastName' type='text' size='10' maxlength='20' value='$key[1]'>";
-              echo"<input class='ListInp' name='email' type='text' size='10' maxlength='319' value='$key[2]'>";
-              echo"<input class='ListInp' name='phone' type='text' size='10' maxlength='20' value='$key[3]'></br>";
-              ?></form>
-            <?php };?>
+            <?php foreach($Admins as $key){getList($key);}?>
           </div>
 					<h1>Деректори</h1>
-          <form action='Details/AccountListDo.php' method='post'>
-          <input class='ListBtn' type='submit' name='Do' value='Створити'>
-          <input class='id' name='status' type='text' size='0' maxlength='2' value='4'>
-          </form>
+          <?php getBut(4)?>
           <div class='Info'>
-            <?php foreach($Directors as $key){
-              ?><form action='Details/AccountListDo.php' method='post'><?php
-              echo"<input class='ListInp' type='submit' name='Do' value='Зберегти'>";
-              echo"<input class='ListInp' type='submit' name='Do' value='Видалити'>";
-              echo"<input class='id' name='id' type='text' size='0' maxlength='10000' value='$key[4]'>"; 
-              echo"<input class='ListInp' name='firstName' type='text' size='10' maxlength='20' value='$key[0]'>";
-              echo"<input class='ListInp' name='lastName' type='text' size='10' maxlength='20' value='$key[1]'>";
-              echo"<input class='ListInp' name='email' type='text' size='10' maxlength='319' value='$key[2]'>";
-              echo"<input class='ListInp' name='phone' type='text' size='10' maxlength='20' value='$key[3]'></br>";
-              ?></form>
-            <?php };?>
+            <?php foreach($Directors as $key){getList($key);}?>
           </div>
 					<h1>Вчителі</h1>
-          <form action='Details/AccountListDo.php' method='post'>
-          <input class='ListBtn' type='submit' name='Do' value='Створити'>
-          <input class='id' name='status' type='text' size='0' maxlength='2' value='3'>
-          </form>
+          <?php getBut(3)?>
           <div class='Info'>
-            <?php foreach($Teachers as $key){
-              ?><form action='Details/AccountListDo.php' method='post'><?php
-              echo"<input class='ListInp' type='submit' name='Do' value='Зберегти'>";
-              echo"<input class='ListInp' type='submit' name='Do' value='Видалити'>";
-              echo"<input class='id' name='id' type='text' size='0' maxlength='10000' value='$key[4]'>"; 
-              echo"<input class='ListInp' name='firstName' type='text' size='10' maxlength='20' value='$key[0]'>";
-              echo"<input class='ListInp' name='lastName' type='text' size='10' maxlength='20' value='$key[1]'>";
-              echo"<input class='ListInp' name='email' type='text' size='10' maxlength='319' value='$key[2]'>";
-              echo"<input class='ListInp' name='phone' type='text' size='10' maxlength='20' value='$key[3]'></br>";
-              ?></form>
-            <?php };?>
+            <?php foreach($Teachers as $key){getList($key);}?>
           </div>
           <h1>Батьки</h1>
-          <form action='Details/AccountListDo.php' method='post'>
-          <input class='ListBtn' type='submit' name='Do' value='Створити'>
-          <input class='id' name='status' type='text' size='0' maxlength='2' value='2'>
-          </form>
+          <?php getBut(2)?>
           <div class='Info'>
-            <?php foreach($Perents as $key){
-              ?><form action='Details/AccountListDo.php' method='post'><?php
-              echo"<input class='ListInp' type='submit' name='Do' value='Зберегти'>";
-              echo"<input class='ListInp' type='submit' name='Do' value='Видалити'>";
-              echo"<input class='id' name='id' type='text' size='0' maxlength='10000' value='$key[4]'>"; 
-              echo"<input class='ListInp' name='firstName' type='text' size='10' maxlength='20' value='$key[0]'>";
-              echo"<input class='ListInp' name='lastName' type='text' size='10' maxlength='20' value='$key[1]'>";
-              echo"<input class='ListInp' name='email' type='text' size='10' maxlength='319' value='$key[2]'>";
-              echo"<input class='ListInp' name='phone' type='text' size='10' maxlength='20' value='$key[3]'></br>";
-              ?></form>
-            <?php };?>
+            <?php foreach($Perents as $key){getList($key);}?>
           </div>
           <h1>Учні</h1>
-          <form action='Details/AccountListDo.php' method='post'>
-          <input class='ListBtn' type='submit' name='Do' value='Створити'>
-          <input class='id' name='status' type='text' size='0' maxlength='2' value='1'>
-          </form>
+          <?php getBut(1)?>
           <div class='Info'>
-            <?php foreach($Students as $key){
-              ?><form action='Details/AccountListDo.php' method='post'><?php
-              echo"<input class='ListInp' type='submit' name='Do' value='Зберегти'>";
-              echo"<input class='ListInp' type='submit' name='Do' value='Видалити'>";
-              echo"<input class='id' name='id' type='text' size='0' maxlength='10000' value='$key[4]'>"; 
-              echo"<input class='ListInp' name='firstName' type='text' size='10' maxlength='20' value='$key[0]'>";
-              echo"<input class='ListInp' name='lastName' type='text' size='10' maxlength='20' value='$key[1]'>";
-              echo"<input class='ListInp' name='email' type='text' size='10' maxlength='319' value='$key[2]'>";
-              echo"<input class='ListInp' name='phone' type='text' size='10' maxlength='20' value='$key[3]'></br>";
-              ?></form>
-            <?php };?>
+            <?php foreach($Students as $key){getList($key);}?>
           </div>
           <h1>Без категорій</h1>
-          <form action='Details/AccountListDo.php' method='post'>
-          <input class='ListBtn' type='submit' name='Do' value='Створити'>
-          <input class='id' name='status' type='text' size='0' maxlength='2' value='0'>
-          </form>
+          <?php getBut(0)?>
           <div class='Info'>
-            <?php foreach($Unclassed as $key){
-              ?><form action='Details/AccountListDo.php' method='post'><?php
-              echo"<input class='ListInp' type='submit' name='Do' value='Зберегти'>";
-              echo"<input class='ListInp' type='submit' name='Do' value='Видалити'>";
-              echo"<input class='id' name='id' type='text' size='0' maxlength='10000' value='$key[4]'>"; 
-              echo"<input class='ListInp' name='firstName' type='text' size='10' maxlength='20' value='$key[0]'>";
-              echo"<input class='ListInp' name='lastName' type='text' size='10' maxlength='20' value='$key[1]'>";
-              echo"<input class='ListInp' name='email' type='text' size='10' maxlength='319' value='$key[2]'>";
-              echo"<input class='ListInp' name='phone' type='text' size='10' maxlength='20' value='$key[3]'></br>";
-              ?></form>
-            <?php };?>
+            <?php foreach($Unclassed as $key){getList($key);}?>
           </div>
       	</tr>
         <!--Get list-->
@@ -146,6 +68,6 @@ $_SESSION['StatusCreate'] = NULL;
         </div>
       </div>
     </div>
-    <?php include "Details/Footer.php";?>
+    <?php include "Details/Footer.php"; ?>
   </body>
 </html>

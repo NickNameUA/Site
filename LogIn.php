@@ -33,11 +33,11 @@ $_SESSION['Error'] = NULL;
       <form action="\Details\check_log.php" method="post">
         <p>    
           <label>Ваш Email:<br></label>
-          <input name="email" type="text" size="20" maxlength="319" value="<?php echo($_SESSION['email']);?>">
+          <input name="email" type="text" size="20" required maxlength="319" value="<?php echo($_SESSION['email']);?>">
         </p> 
         <p>
           <label>Пароль:<br></label>
-          <input name="password" type="password" size="20" maxlength="20">
+          <input name="password" type="password" size="20" required maxlength="20">
         </p> 
         <p>
           <div class="names">

@@ -40,4 +40,32 @@ $altFriday = mysqli_query($connectSchedule, "SELECT `Day`, `1`, `2`, `3`, `4`, `
 $altFriday = mysqli_fetch_all($altFriday);
 $altFriday = $altFriday[0];
 //Get friday list
+
+function getDayAdmin($day1, $day2, $day3, $day4, $day5, $lesson){
+    echo"
+    <td><input class='input' name='monday$lesson' type='text' size='10' maxlenght='25' value='$day1[$lesson]'></td>
+    <td><input class='input' name='tuesday$lesson' type='text' size='10' maxlenght='25' value='$day2[$lesson]'></td>
+    <td><input class='input' name='wednesday$lesson' type='text' size='10' maxlenght='25' value='$day3[$lesson]'></td>
+    <td><input class='input' name='thursday$lesson' type='text' size='10' maxlenght='25' value='$day4[$lesson]'></td>
+    <td><input class='input' name='friday$lesson' type='text' size='10' maxlenght='25' value='$day5[$lesson]'></td>";
+}
+
+function getDay($day1, $day2, $day3, $day4, $day5, $lesson){
+    echo"
+    <td>$day1[$lesson]</td>
+    <td>$day2[$lesson]</td>
+    <td>$day3[$lesson]</td>
+    <td>$day4[$lesson]</td>
+    <td>$day5[$lesson]</td>";
+}
+
+function getTimeAdmin($timeStart, $timeFinish, $time){
+	echo"<td><input class='input' name='Start$time' type='text' size='5' maxlenght='5' value='$timeStart'></td>";
+	echo"<td><input class='input' name='Finish$time' type='text' size='5' maxlenght='5' value='$timeFinish'></td>";
+}
+
+function getTime($timeStart, $timeFinish){
+	echo"<td>$timeStart</td>";
+	echo"<td>$timeFinish</td>";
+}
 ?>

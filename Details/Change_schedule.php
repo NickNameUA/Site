@@ -45,7 +45,7 @@ if ($do == 'Зберегти час'){
 			$whileDay = $day . $count;
 			$lesson = $_POST[$whileDay];
 			if ($lesson != NULL){
-				mysqli_query($connectSchedule, "UPDATE `class10b` SET `$count` = '$lesson' WHERE `time`.`Day` = '$day';");
+				mysqli_query($connectSchedule, "UPDATE `class10b` SET `$count` = '$lesson' WHERE `class10b`.`Day` = '$day';");
 			};
 			$count++;
 		}

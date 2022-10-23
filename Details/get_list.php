@@ -18,4 +18,28 @@ $Students = mysqli_fetch_all($Students);
 $Unclassed = mysqli_query($connect, "SELECT `FirstName`, `LastName`, `Email`, `Phone`, `id` FROM `logdata` WHERE `Status` LIKE '0'");
 $Unclassed = mysqli_fetch_all($Unclassed);
 //Get Unclassed list
+
+function getList($key){
+		echo"
+			<form action='Details/AccountListDo.php' method='post'>
+			<input class='ListInp' type='submit' name='Do' value='Зберегти'>
+			<input class='ListInp' type='submit' name='Do' value='Видалити'>
+			<input class='id' name='id' type='text' size='0' value='$key[4]'> 
+			<input class='ListInp' name='firstName' type='text' size='10' maxlength='20' value='$key[0]'>
+			<input class='ListInp' name='lastName' type='text' size='10' maxlength='20' value='$key[1]'>
+			<input class='ListInp' name='email' type='text' size='10' maxlength='319' value='$key[2]'>
+			<input class='ListInp' name='phone' type='text' size='10' maxlength='20' value='$key[3]'></br>
+			</form>
+		";
+};
+// function for get list
+
+function getBut($status){
+	echo"
+		<form action='Details/AccountListDo.php' method='post'>
+			<input class='ListBtn' type='submit' name='Do' value='Створити'>
+			<input class='id' name='status' type='text' size='0' maxlength='2' value='$status'>
+		</form>
+	";
+}
 ?>

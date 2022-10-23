@@ -42,147 +42,35 @@
               <tbody>
                 <tr>
                   <td class="bold">1</td>
-                  <?php
-                    if($a[0][4] > 3){echo"
-                      <td><input class='input' name='monday1' type='text' size='10' maxlenght='25' value='$monday[1]'></td>
-                      <td><input class='input' name='tuesday1' type='text' size='10' maxlenght='25' value='$tuesday[1]'></td>
-                      <td><input class='input' name='wednesday1' type='text' size='10' maxlenght='25' value='$wednesday[1]'></td>
-                      <td><input class='input' name='thursday1' type='text' size='10' maxlenght='25' value='$thursday[1]'></td>
-                      <td><input class='input' name='friday1' type='text' size='10' maxlenght='25' value='$friday[1]'></td>";
-                    }else{echo"
-                      <td>$monday[1]</td>
-                      <td>$tuesday[1]</td>
-                      <td>$wednesday[1]</td>
-                      <td>$thursday[1]</td>
-                      <td>$friday[1]</td>
-                    ";};
-                  ?>
+                  <?php if($a[0][4] > 3){getDayAdmin($monday, $tuesday, $wednesday, $thursday, $friday, 1);}else{getDay($monday, $tuesday, $wednesday, $thursday, $friday, 1);}; ?>
                 </tr>
                 <tr>
                   <td class="bold">2</td>
-                  <?php
-                    if($a[0][4] > 3){echo"
-                      <td><input class='input' name='monday2' type='text' size='10' maxlenght='25' value='$monday[2]'></td>
-                      <td><input class='input' name='tuesday2' type='text' size='10' maxlenght='25' value='$tuesday[2]'></td>
-                      <td><input class='input' name='wednesday2' type='text' size='10' maxlenght='25' value='$wednesday[2]'></td>
-                      <td><input class='input' name='thursday2' type='text' size='10' maxlenght='25' value='$thursday[2]'></td>
-                      <td><input class='input' name='friday2' type='text' size='10' maxlenght='25' value='$friday[2]'></td>";
-                    }else{echo"
-                      <td>$monday[2]</td>
-                      <td>$tuesday[2]</td>
-                      <td>$wednesday[2]</td>
-                      <td>$thursday[2]</td>
-                      <td>$friday[2]</td>
-                    ";};
-                  ?>
+                  <?php if($a[0][4] > 3){getDayAdmin($monday, $tuesday, $wednesday, $thursday, $friday, 2);}else{getDay($monday, $tuesday, $wednesday, $thursday, $friday, 2);}; ?>
                 </tr>
                 <tr>
                   <td class="bold">3</td>
-                  <?php
-                    if($a[0][4] > 3){echo"
-                      <td><input class='input' name='monday3' type='text' size='10' maxlenght='25' value='$monday[3]'></td>
-                      <td><input class='input' name='tuesday3' type='text' size='10' maxlenght='25' value='$tuesday[3]'></td>
-                      <td><input class='input' name='wednesday3' type='text' size='10' maxlenght='25' value='$wednesday[3]'></td>
-                      <td><input class='input' name='thursday3' type='text' size='10' maxlenght='25' value='$thursday[3]'></td>
-                      <td><input class='input' name='friday3' type='text' size='10' maxlenght='25' value='$friday[3]'></td>";
-                    }else{echo"
-                      <td>$monday[3]</td>
-                      <td>$tuesday[3]</td>
-                      <td>$wednesday[3]</td>
-                      <td>$thursday[3]</td>
-                      <td>$friday[3]</td>
-                    ";};
-                  ?>
+                  <?php if($a[0][4] > 3){getDayAdmin($monday, $tuesday, $wednesday, $thursday, $friday, 3);}else{getDay($monday, $tuesday, $wednesday, $thursday, $friday, 3);}; ?>
                 </tr>
                 <tr>
                   <td class="bold">4</td>
-                  <?php
-                    if($a[0][4] > 3){echo"
-                      <td><input class='input' name='monday4' type='text' size='10' maxlenght='25' value='$monday[4]'></td>
-                      <td><input class='input' name='tuesday4' type='text' size='10' maxlenght='25' value='$tuesday[4]'></td>
-                      <td><input class='input' name='wednesday4' type='text' size='10' maxlenght='25' value='$wednesday[4]'></td>
-                      <td><input class='input' name='thursday4' type='text' size='10' maxlenght='25' value='$thursday[4]'></td>
-                      <td><input class='input' name='friday4' type='text' size='10' maxlenght='25' value='$friday[4]'></td>";
-                    }else{echo"
-                      <td>$monday[4]</td>
-                      <td>$tuesday[4]</td>
-                      <td>$wednesday[4]</td>
-                      <td>$thursday[4]</td>
-                      <td>$friday[4]</td>
-                    ";};
-                  ?>
+                  <?php if($a[0][4] > 3){getDayAdmin($monday, $tuesday, $wednesday, $thursday, $friday, 4);}else{getDay($monday, $tuesday, $wednesday, $thursday, $friday, 4);}; ?>
                 </tr>
                 <tr>
                   <td class="bold">5</td>
-                  <?php
-                    if($a[0][4] > 3){echo"
-                      <td><input class='input' name='monday5' type='text' size='10' maxlenght='25' value='$monday[5]'></td>
-                      <td><input class='input' name='tuesday5' type='text' size='10' maxlenght='25' value='$tuesday[5]'></td>
-                      <td><input class='input' name='wednesday5' type='text' size='10' maxlenght='25' value='$wednesday[5]'></td>
-                      <td><input class='input' name='thursday5' type='text' size='10' maxlenght='25' value='$thursday[5]'></td>
-                      <td><input class='input' name='friday5' type='text' size='10' maxlenght='25' value='$friday[5]'></td>";
-                    }else{echo"
-                      <td>$monday[5]</td>
-                      <td>$tuesday[5]</td>
-                      <td>$wednesday[5]</td>
-                      <td>$thursday[5]</td>
-                      <td>$friday[5]</td>
-                    ";};
-                  ?>
+                  <?php if($a[0][4] > 3){getDayAdmin($monday, $tuesday, $wednesday, $thursday, $friday, 5);}else{getDay($monday, $tuesday, $wednesday, $thursday, $friday, 5);}; ?>
                 </tr>
                 <tr>
                   <td class="bold">6</td>
-                  <?php
-                    if($a[0][4] > 3){echo"
-                      <td><input class='input' name='monday6' type='text' size='10' maxlenght='25' value='$monday[6]'></td>
-                      <td><input class='input' name='tuesday6' type='text' size='10' maxlenght='25' value='$tuesday[6]'></td>
-                      <td><input class='input' name='wednesday6' type='text' size='10' maxlenght='25' value='$wednesday[6]'></td>
-                      <td><input class='input' name='thursday6' type='text' size='10' maxlenght='25' value='$thursday[6]'></td>
-                      <td><input class='input' name='friday6' type='text' size='10' maxlenght='25' value='$friday[6]'></td>";
-                    }else{echo"
-                      <td>$monday[6]</td>
-                      <td>$tuesday[6]</td>
-                      <td>$wednesday[6]</td>
-                      <td>$thursday[6]</td>
-                      <td>$friday[6]</td>
-                    ";};
-                  ?>
+                  <?php if($a[0][4] > 3){getDayAdmin($monday, $tuesday, $wednesday, $thursday, $friday, 6);}else{getDay($monday, $tuesday, $wednesday, $thursday, $friday, 6);}; ?>
                 </tr>
                 <tr>
                   <td class="bold">7</td>
-                  <?php
-                    if($a[0][4] > 3){echo"
-                      <td><input class='input' name='monday7' type='text' size='10' maxlenght='25' value='$monday[7]'></td>
-                      <td><input class='input' name='tuesday7' type='text' size='10' maxlenght='25' value='$tuesday[7]'></td>
-                      <td><input class='input' name='wednesday7' type='text' size='10' maxlenght='25' value='$wednesday[7]'></td>
-                      <td><input class='input' name='thursday7' type='text' size='10' maxlenght='25' value='$thursday[7]'></td>
-                      <td><input class='input' name='friday7' type='text' size='10' maxlenght='25' value='$friday[7]'></td>";
-                    }else{echo"
-                      <td>$monday[7]</td>
-                      <td>$tuesday[7]</td>
-                      <td>$wednesday[7]</td>
-                      <td>$thursday[7]</td>
-                      <td>$friday[7]</td>
-                    ";};
-                  ?>
+                  <?php if($a[0][4] > 3){getDayAdmin($monday, $tuesday, $wednesday, $thursday, $friday, 7);}else{getDay($monday, $tuesday, $wednesday, $thursday, $friday, 7);}; ?>
                 </tr>
                 <tr>
                   <td class="bold">8</td>
-                  <?php
-                    if($a[0][4] > 3){echo"
-                      <td><input class='input' name='monday8' type='text' size='10' maxlenght='25' value='$monday[8]'></td>
-                      <td><input class='input' name='tuesday8' type='text' size='10' maxlenght='25' value='$tuesday[8]'></td>
-                      <td><input class='input' name='wednesday8' type='text' size='10' maxlenght='25' value='$wednesday[8]'></td>
-                      <td><input class='input' name='thursday8' type='text' size='10' maxlenght='25' value='$thursday[8]'></td>
-                      <td><input class='input' name='friday8' type='text' size='10' maxlenght='25' value='$friday[8]'></td>";
-                    }else{echo"
-                      <td>$monday[8]</td>
-                      <td>$tuesday[8]</td>
-                      <td>$wednesday[8]</td>
-                      <td>$thursday[8]</td>
-                      <td>$friday[8]</td>
-                    ";};
-                  ?>
+                  <?php if($a[0][4] > 3){getDayAdmin($monday, $tuesday, $wednesday, $thursday, $friday, 8);}else{getDay($monday, $tuesday, $wednesday, $thursday, $friday, 8);}; ?>
                 </tr>
               </tbody>
             </table>
@@ -203,75 +91,35 @@
               <tbody>
                 <tr>
                   <td class="bold">1</td>
-                  <?php if($a[0][4] > 3){
-                    echo"<td><input class='input' name='Start1' type='text' size='5' maxlenght='5' value='$lessonStart[0]'></td>";
-                    echo"<td><input class='input' name='Finish1' type='text' size='5' maxlenght='5' value='$lessonFinish[0]'></td>";
-                  }else{
-                  echo"<td>$lessonStart[0]</td>";
-                  echo"<td>$lessonFinish[0]</td>";};?>
+                  <?php if($a[0][4] > 3){getTimeAdmin($lessonStart[0], $lessonFinish[0], 1);}else{getTime($lessonStart[0], $lessonFinish[0]);}?>
                 </tr>
                 <tr>
                   <td class="bold">2</td>
-                  <?php if($a[0][4] > 3){
-                    echo"<td><input class='input' name='Start2' type='text' size='5' maxlenght='5' value='$lessonStart[1]'></td>";
-                    echo"<td><input class='input' name='Finish2' type='text' size='5' maxlenght='5' value='$lessonFinish[1]'></td>";
-                  }else{
-                  echo"<td>$lessonStart[1]</td>";
-                  echo"<td>$lessonFinish[1]</td>";};?>
+                  <?php if($a[0][4] > 3){getTimeAdmin($lessonStart[1], $lessonFinish[1], 2);}else{getTime($lessonStart[1], $lessonFinish[1]);}?>
                 </tr>
                 <tr>
                   <td class="bold">3</td>
-                  <?php if($a[0][4] > 3){
-                    echo"<td><input class='input' name='Start3' type='text' size='5' maxlenght='5' value='$lessonStart[2]'></td>";
-                    echo"<td><input class='input' name='Finish3' type='text' size='5' maxlenght='5' value='$lessonFinish[2]'></td>";
-                  }else{
-                  echo"<td>$lessonStart[2]</td>";
-                  echo"<td>$lessonFinish[2]</td>";};?>
+                  <?php if($a[0][4] > 3){getTimeAdmin($lessonStart[2], $lessonFinish[2], 3);}else{getTime($lessonStart[2], $lessonFinish[2]);}?>
                 </tr>
                 <tr>
                   <td class="bold">4</td>
-                  <?php if($a[0][4] > 3){
-                    echo"<td><input class='input' name='Start4' type='text' size='5' maxlenght='5' value='$lessonStart[3]'></td>";
-                    echo"<td><input class='input' name='Finish4' type='text' size='5' maxlenght='5' value='$lessonFinish[3]'></td>";
-                  }else{
-                  echo"<td>$lessonStart[3]</td>";
-                  echo"<td>$lessonFinish[3]</td>";};?>
+                  <?php if($a[0][4] > 3){getTimeAdmin($lessonStart[3], $lessonFinish[3], 4);}else{getTime($lessonStart[3], $lessonFinish[3]);}?>
                 </tr>
                 <tr>
                   <td class="bold">5</td>
-                  <?php if($a[0][4] > 3){
-                    echo"<td><input class='input' name='Start5' type='text' size='5' maxlenght='5' value='$lessonStart[4]'></td>";
-                    echo"<td><input class='input' name='Finish5' type='text' size='5' maxlenght='5' value='$lessonFinish[4]'></td>";
-                  }else{
-                  echo"<td>$lessonStart[4]</td>";
-                  echo"<td>$lessonFinish[4]</td>";};?>
+                  <?php if($a[0][4] > 3){getTimeAdmin($lessonStart[4], $lessonFinish[4], 5);}else{getTime($lessonStart[4], $lessonFinish[4]);}?>
                 </tr>
                 <tr>
                   <td class="bold">6</td>
-                  <?php if($a[0][4] > 3){
-                    echo"<td><input class='input' name='Start6' type='text' size='5' maxlenght='5' value='$lessonStart[5]'></td>";
-                    echo"<td><input class='input' name='Finish6' type='text' size='5' maxlenght='5' value='$lessonFinish[5]'></td>";
-                  }else{
-                  echo"<td>$lessonStart[5]</td>";
-                  echo"<td>$lessonFinish[5]</td>";};?>
+                  <?php if($a[0][4] > 3){getTimeAdmin($lessonStart[5], $lessonFinish[5], 6);}else{getTime($lessonStart[5], $lessonFinish[5]);}?>
                 </tr>
                 <tr>
                   <td class="bold">7</td>
-                  <?php if($a[0][4] > 3){
-                    echo"<td><input class='input' name='Start7' type='text' size='5' maxlenght='5' value='$lessonStart[6]'></td>";
-                    echo"<td><input class='input' name='Finish7' type='text' size='5' maxlenght='5' value='$lessonFinish[6]'></td>";
-                  }else{
-                  echo"<td>$lessonStart[6]</td>";
-                  echo"<td>$lessonFinish[6]</td>";};?>
+                  <?php if($a[0][4] > 3){getTimeAdmin($lessonStart[6], $lessonFinish[6], 7);}else{getTime($lessonStart[6], $lessonFinish[6]);}?>
                 </tr>
                 <tr>
                   <td class="bold">8</td>
-                  <?php if($a[0][4] > 3){
-                    echo"<td><input class='input' name='Start8' type='text' size='5' maxlenght='5' value='$lessonStart[7]'></td>";
-                    echo"<td><input class='input' name='Finish8' type='text' size='5' maxlenght='5' value='$lessonFinish[7]'></td>";
-                  }else{
-                  echo"<td>$lessonStart[7]</td>";
-                  echo"<td>$lessonFinish[7]</td>";};?>
+                  <?php if($a[0][4] > 3){getTimeAdmin($lessonStart[7], $lessonFinish[7], 8);}else{getTime($lessonStart[7], $lessonFinish[7]);}?>
                 </tr>
               </tbody>
             </table>

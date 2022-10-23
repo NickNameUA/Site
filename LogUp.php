@@ -43,11 +43,11 @@ if (!$_SESSION["StatusCreate"] == NULL){
         <div class="names">
           <p>
             <label>Ваше ім'я:<br></label>
-            <input name="firstName" type="text" size="10" maxlength="20" value = "<?php echo($_SESSION['firstname']);?>">  
+            <input name="firstName" type="text" size="10" required maxlength="20" value = "<?php echo($_SESSION['firstname']);?>">  
           </p>
           <p>
             <label>Ваша фамілія:<br></label>
-            <input name="lastName" type="text" size="10" maxlength="20" value="<?php echo($_SESSION['lastname']);?>">
+            <input name="lastName" type="text" size="10" required maxlength="20" value="<?php echo($_SESSION['lastname']);?>">
           </p>
         </div>
         <div class="email"> 
@@ -62,13 +62,13 @@ if (!$_SESSION["StatusCreate"] == NULL){
         <div class="email">
           <p>
             <label>Пароль:<br></label>
-            <input name="password" type="password" size="20" maxlength="20">
+            <input name="password" type="password" size="20" required maxlength="20">
           </p>        
         </div>
         <div class="email">  
           <p>
             <label>Ваш Email:<br></label>
-            <input name="email" type="text" size="20" maxlength="319" value="<?php echo($_SESSION['email']);?>">
+            <input name="email" type="text" size="20" required maxlength="319" value="<?php echo($_SESSION['email']);?>">
           </p>
           <p>
             <label>Ваш номер телефону<br></label>
