@@ -1,4 +1,4 @@
-<?php include "get_info.php";?>
+<?php include "Details\Get\get_info.php";?>
 <div class="navbar" style="background-image: url(Img\Button\BtnMenu.png);">
   <a id="index" href="Index.php">Головна</a>
   <a id="news" href="News.php">Новини</a>
@@ -15,7 +15,7 @@
         <option value="#for_teachers">Для вчителів</option>
       ';}?>
         <option value="More_information.php">Більше інформації</option>
-        <option value="#main_info">Основна інформація</option>
+        <option value="MainInfo.php">Основна інформація</option>
     </select>
   <div class="dropdown">
     <button class="dropbtn" onclick="myFunction(2)">
@@ -68,7 +68,7 @@
   <button class="ColorSet" id="colorSetBut" onclick="changeColorSet()">
     <img
     id="colorImg"
-    src="/Img/Button/Dark/ChangeDark.png"
+    src="\Img\Button\Dark\ChangeDark.png"
     height="47"
     width="47"
     alt="Profile"/>
@@ -76,7 +76,7 @@
   <a id="account" href="<?php if ($_SESSION['Login'] == NULL){echo('LogIn.php');}else{echo('Profile.php');}?>">
     <img
     id="accountImg"
-    src="/Img/Button/Dark/AccountImgDark.png"
+    src="\Img\Button\Dark\AccountImgDark.png"
     height="47"
     width="47"
     alt="Profile"

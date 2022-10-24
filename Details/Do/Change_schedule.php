@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "Db.php";
+include "..\Get\Db.php";
 $do = $_POST['save'];
 if ($do == 'Зберегти час'){
 	$whileStatus = 'Start';
@@ -51,5 +51,5 @@ if ($do == 'Зберегти час'){
 		}
 	};
 }
-header('Location: /ForStudents.php');
+header('Location: \ForStudents.php');
 exit;

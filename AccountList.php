@@ -10,17 +10,17 @@ $_SESSION['StatusCreate'] = NULL;
       content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"
     />
     <title>Account List</title>
-    <link rel="stylesheet" href="Styles/Pages/AccountList.css" />
+    <link rel="stylesheet" href="Styles\Pages\AccountList.css" />
     <?php
-    include "Details/Links.php";
-    include "Details/NavBar.php";
-    include "Details/get_list.php";
+    include "Details\Prototype\Links.php";
+    include "Details\Prototype\NavBar.php";
+    include "Details\Get\get_list.php";
     ?>
    
-    <script src="Src/NavBar.js"></script>
-    <script src="Src/Scroll.js"></script>
-    <script src="Src/Theame.js"></script>
-    <script src="Src/ListEdit.js"></script>
+    <script src="Src\NavBar.js"></script>
+    <script src="Src\Scroll.js"></script>
+    <script src="Src\Theame.js"></script>
+    <script src="Src\ListEdit.js"></script>
   </head>
   <body onload="check()">
     <div id="pagebody">
@@ -68,6 +68,6 @@ $_SESSION['StatusCreate'] = NULL;
         </div>
       </div>
     </div>
-    <?php include "Details/Footer.php"; ?>
+    <?php include "Details\Prototype\Footer.php"; ?>
   </body>
 </html>

@@ -18,10 +18,10 @@ $_SESSION['Error'] = NULL;
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Профіль</title>
-  <link rel="stylesheet" href="Styles/Pages/Profile.css" />
+  <link rel="stylesheet" href="Styles\Pages\Profile.css" />
   <?php
-    include "Details/Links.php";
-    include "Details/NavBar.php";
+    include "Details\Prototype\Links.php";
+    include "Details\Prototype\NavBar.php";
   ?>
    
   <script src="Src/NavBar.js"></script>
@@ -68,7 +68,7 @@ $_SESSION['Error'] = NULL;
       break;
     }
   };?>
-  <form action="\Details\profil_edit.php" method="post">
+  <form action="Details\Do\profil_edit.php" method="post">
   <div class="names">
     <p>Ваше ім'я</p>
     <input class="Contain" name="firstName" type="text" size="10" maxlength="20" value = "<?php echo($a[0][0]);?>">
@@ -88,6 +88,6 @@ $_SESSION['Error'] = NULL;
   </div>
 </form>  
   </div>
-    <?php include "Details/Footer.php";?>
+    <?php include "Details\Prototype\Footer.php";?>
 </body>
 </html>

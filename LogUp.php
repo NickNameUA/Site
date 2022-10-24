@@ -18,7 +18,7 @@ if (!$_SESSION["StatusCreate"] == NULL){
       </p>
     </div>
   ';
-  }
+  }elseif(!$_SESSION['Login'] == NULL){header('Location: \Profile.php');}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,26 +28,26 @@ if (!$_SESSION["StatusCreate"] == NULL){
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Реєстрація</title>
 
-  <link rel="stylesheet" href="Styles/Pages/Log.css" />
+  <link rel="stylesheet" href="Styles\Pages\Log.css" />
   <?php
-    include "Details/Links.php";
-    include "Details/NavBar.php";
+    include "Details\Prototype\Links.php";
+    include "Details\Prototype\NavBar.php";
   ?>
-  <script src="Src/NavBar.js"></script>
-  <script src="Src/Scroll.js"></script>
-  <script src="Src/Theame.js"></script>
+  <script src="Src\NavBar.js"></script>
+  <script src="Src\Scroll.js"></script>
+  <script src="Src\Theame.js"></script>
 </head>
   <body onload="check()">
     <div id="LogIn">
-      <form action="\Details\check_reg.php" method="post">
+      <form action="Details\Do\check_reg.php" method="post">
         <div class="names">
           <p>
             <label>Ваше ім'я:<br></label>
-            <input name="firstName" type="text" size="10" required maxlength="20" value = "<?php echo($_SESSION['firstname']);?>">  
+            <input name="firstName" type="text" size="10" maxlength="20" value = "<?php echo($_SESSION['firstname']);?>">  
           </p>
           <p>
             <label>Ваша фамілія:<br></label>
-            <input name="lastName" type="text" size="10" required maxlength="20" value="<?php echo($_SESSION['lastname']);?>">
+            <input name="lastName" type="text" size="10" maxlength="20" value="<?php echo($_SESSION['lastname']);?>">
           </p>
         </div>
         <div class="email"> 
@@ -62,13 +62,13 @@ if (!$_SESSION["StatusCreate"] == NULL){
         <div class="email">
           <p>
             <label>Пароль:<br></label>
-            <input name="password" type="password" size="20" required maxlength="20">
+            <input name="password" type="password" size="20" maxlength="20">
           </p>        
         </div>
         <div class="email">  
           <p>
             <label>Ваш Email:<br></label>
-            <input name="email" type="text" size="20" required maxlength="319" value="<?php echo($_SESSION['email']);?>">
+            <input name="email" type="text" size="20" maxlength="319" value="<?php echo($_SESSION['email']);?>">
           </p>
           <p>
             <label>Ваш номер телефону<br></label>
@@ -81,6 +81,6 @@ if (!$_SESSION["StatusCreate"] == NULL){
         </div>      
       </form>
     </div>
-    <?php include "Details/Footer.php";?>
+    <?php include "Details\Prototype\Footer.php";?>
   </body>
 </html>

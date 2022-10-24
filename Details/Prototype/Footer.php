@@ -1,7 +1,7 @@
 <button id="scrlBtnTop" onclick="bScrollTop()">
     <img
       id="scrlBtnImg"
-      src="Img/Button/Dark/BtnScrlTopDark.png"
+      src="Img\Button\Dark\BtnScrlTopDark.png"
       width="60px"
       height="60px"
       alt="Scroll Top"

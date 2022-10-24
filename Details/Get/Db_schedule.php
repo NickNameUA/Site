@@ -1,5 +1,5 @@
 <?php
-include 'Db.php';
+include "Db.php";
 $lessonStart = mysqli_query($connectSchedule, "SELECT `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8` FROM `time` WHERE `Time` LIKE 'Start'");
 $lessonStart = mysqli_fetch_all($lessonStart);
 $lessonStart = $lessonStart[0];

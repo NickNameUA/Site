@@ -21,7 +21,7 @@ $Unclassed = mysqli_fetch_all($Unclassed);
 
 function getList($key){
 		echo"
-			<form action='Details/AccountListDo.php' method='post'>
+			<form action='Details\Do\AccountListDo.php' method='post'>
 			<input class='ListInp' type='submit' name='Do' value='Зберегти'>
 			<input class='ListInp' type='submit' name='Do' value='Видалити'>
 			<input class='id' name='id' type='text' size='0' value='$key[4]'> 
@@ -36,7 +36,7 @@ function getList($key){
 
 function getBut($status){
 	echo"
-		<form action='Details/AccountListDo.php' method='post'>
+		<form action='Details\Do\AccountListDo.php' method='post'>
 			<input class='ListBtn' type='submit' name='Do' value='Створити'>
 			<input class='id' name='status' type='text' size='0' maxlength='2' value='$status'>
 		</form>

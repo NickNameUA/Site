@@ -5,18 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Styles/Pages/ForStudents.css"/>
+  <link rel="stylesheet" href="Styles\Pages\ForStudents.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
   <title>Для учнів</title>
   <?php
-  include "Details/Links.php";
-  include "Details/NavBar.php";
+  include "Details\Prototype\Links.php";
+  include "Details\Prototype\NavBar.php";
   ?>
-  <script src="Src/NavBar.js"></script>
-  <script src="Src/Scroll.js"></script>
-  <script src="Src/Theame.js"></script>
+  <script src="Src\NavBar.js"></script>
+  <script src="Src\Scroll.js"></script>
+  <script src="Src\Theame.js"></script>
 </head>
 <body onload="check()">
   <div id="pagebody">
@@ -25,10 +25,10 @@
         <h2 class="title">Розклад уроків</h2>
         <h3>Розклад уроків 10-Б клас</h3>
         <!-- Table -->
-        <?php include "Details/Db_schedule.php";?>
+        <?php include "Details\Get\Db_schedule.php";?>
         <div>
           <table class="lassons">
-            <form action='Details\Change_schedule.php' method='post'>
+            <form action='Details\Do\Change_schedule.php' method='post'>
               <thead>
                 <tr>
                   <td class="background">№</td>
@@ -79,7 +79,7 @@
         </div>
         <div>
           <h2 class="title">Розклад дзвінків</h2>
-          <form action='Details\Change_schedule.php' method='post'>
+          <form action='Details\Do\Change_schedule.php' method='post'>
             <table class="bells">
               <thead>
                 <tr>
@@ -130,5 +130,5 @@
     </div>
   </div>
 </body>
-<?php include "Details/Footer.php";?>
+<?php include "Details\Prototype\Footer.php";?>
 </html>

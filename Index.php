@@ -8,22 +8,22 @@
       content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"
     />
     <title>Liceum 21</title>
-    <link rel="stylesheet" href="Styles/Pages/Home.css" />
+    <link rel="stylesheet" href="Styles\Pages\Home.css" />
     <?php
-    include "Details/Links.php";
-    include "Details/NavBar.php";
+    include "Details\Prototype\Links.php";
+    include "Details\Prototype\NavBar.php";
     ?>
    
-    <script src="Src/NavBar.js"></script>
-    <script src="Src/Scroll.js"></script>
-    <script src="Src/Theame.js"></script>
+    <script src="Src\NavBar.js"></script>
+    <script src="Src\Scroll.js"></script>
+    <script src="Src\Theame.js"></script>
   </head>
   <body onload="check()">
     <div>
       <!--Photo-->
       <img
         id="MainPhoto"
-        src="Img/school-1.png"
+        src="Img\school-1.png"
         alt="Фото Ліцея"
         width="100%"
       />
@@ -34,7 +34,7 @@
           <hr />
           <div class="eTitle">День захисту дітей</div>
           <div>
-            <img src="Img/photo.jpg" alt="Фото" class="eImg" />
+            <img src="Img\photo.jpg" alt="Фото" class="eImg" />
           </div>
         </div>
         <div class="post">
@@ -62,7 +62,7 @@
         <button id="scrlBtnTop" onclick="bScrollTop()">
           <img
             id="scrlBtnImg"
-            src="Img/Button/Dark/BtnScrlTopDark.png"
+            src="Img\Button\Dark\BtnScrlTopDark.png"
             width="60px"
             height="60px"
             alt="Scroll Top"
@@ -72,5 +72,5 @@
     </div>
     <!--Button scroll top-->
   </body>
-  <?php include "Details/Footer.php";?>
+  <?php include "Details\Prototype\Footer.php";?>
 </html>

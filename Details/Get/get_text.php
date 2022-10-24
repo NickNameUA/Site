@@ -1,5 +1,5 @@
 <?php
-include 'Db.php';
+include "Db.php";
 $SchoolRules = mysqli_query($connectText, "SELECT `textName`, `Text` FROM `maininfo` WHERE `textName` LIKE 'SchoolRules'");
 $SchoolRules = mysqli_fetch_all($SchoolRules);
 $SchoolRules = $SchoolRules[0];
